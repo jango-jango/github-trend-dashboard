@@ -18,6 +18,7 @@
         --muted: #8fa0b0;
         --line: #2a3642;
         --accent: #3ecf8e;
+        --accent-dim: color-mix(in srgb, var(--accent) 22%, transparent);
         --warn: #f0a35e;
         --danger: #ef6b6b;
         --rank: #5b6b7a;
@@ -72,7 +73,7 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 0.75rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.75rem;
       }
 
       .diag-item {
@@ -106,18 +107,26 @@
         color: var(--danger);
       }
 
-      .comment {
+      .headline {
         border-left: 3px solid var(--accent);
-        padding: 0.25rem 0 0.25rem 1rem;
-        margin: 0 0 2rem;
-        color: var(--ink);
-        line-height: 1.65;
-        white-space: pre-wrap;
+        padding: 0.15rem 0 0.15rem 1rem;
+        margin: 0 0 0.65rem;
+        font-size: 1.05rem;
+        line-height: 1.55;
+        font-weight: 500;
       }
 
-      .comment.empty {
+      .headline.empty {
         color: var(--muted);
         border-left-color: var(--line);
+        font-weight: 400;
+      }
+
+      .momentum {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.75rem;
+        color: var(--muted);
+        margin: 0 0 1.5rem;
       }
 
       .section-label {
@@ -126,7 +135,167 @@
         letter-spacing: 0.08em;
         text-transform: uppercase;
         color: var(--muted);
+        margin: 0 0 0.65rem;
+      }
+
+      .facets {
+        display: grid;
+        gap: 1.1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .facet-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        align-items: center;
+      }
+
+      .chip {
+        appearance: none;
+        border: 1px solid var(--line);
+        background: color-mix(in srgb, var(--bg1) 90%, transparent);
+        color: var(--ink);
+        font: inherit;
+        font-size: 0.85rem;
+        padding: 0.4rem 0.7rem;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        line-height: 1.2;
+      }
+
+      .chip:hover {
+        border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
+      }
+
+      .chip[aria-pressed="true"] {
+        border-color: var(--accent);
+        background: var(--accent-dim);
+        color: var(--ink);
+      }
+
+      .chip .n {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.72rem;
+        color: var(--muted);
+      }
+
+      .chip[aria-pressed="true"] .n {
+        color: var(--accent);
+      }
+
+      .lang-bars {
+        display: grid;
+        gap: 0.45rem;
+      }
+
+      .lang-bar {
+        display: grid;
+        grid-template-columns: 7.5rem 1fr 1.5rem;
+        gap: 0.6rem;
+        align-items: center;
+        appearance: none;
+        border: 0;
+        background: transparent;
+        color: inherit;
+        font: inherit;
+        padding: 0.2rem 0;
+        cursor: pointer;
+        text-align: left;
+        width: 100%;
+      }
+
+      .lang-bar .name {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.78rem;
+        color: var(--muted);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .lang-bar .track {
+        height: 0.45rem;
+        background: var(--line);
+        border-radius: 1px;
+        overflow: hidden;
+      }
+
+      .lang-bar .fill {
+        height: 100%;
+        background: color-mix(in srgb, var(--accent) 55%, var(--line));
+        width: 0;
+      }
+
+      .lang-bar[aria-pressed="true"] .name {
+        color: var(--accent);
+      }
+
+      .lang-bar[aria-pressed="true"] .fill {
+        background: var(--accent);
+      }
+
+      .lang-bar .n {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.75rem;
+        color: var(--muted);
+        text-align: right;
+      }
+
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
         margin: 0 0 0.75rem;
+      }
+
+      .toolbar .section-label {
+        margin: 0;
+      }
+
+      .view-toggle {
+        display: inline-flex;
+        border: 1px solid var(--line);
+      }
+
+      .view-toggle button {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        color: var(--muted);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.04em;
+        padding: 0.4rem 0.7rem;
+        cursor: pointer;
+      }
+
+      .view-toggle button[aria-pressed="true"] {
+        background: var(--accent-dim);
+        color: var(--accent);
+      }
+
+      .filter-hint {
+        font-size: 0.85rem;
+        color: var(--muted);
+        margin: 0 0 0.75rem;
+        min-height: 1.25rem;
+      }
+
+      .filter-hint button {
+        appearance: none;
+        border: 0;
+        background: none;
+        color: var(--accent);
+        font: inherit;
+        cursor: pointer;
+        padding: 0;
+        text-decoration: underline;
+        text-underline-offset: 2px;
       }
 
       ol.repos {
@@ -143,6 +312,11 @@
         align-items: start;
         padding: 1rem 0;
         border-bottom: 1px solid var(--line);
+        transition: opacity 0.15s ease;
+      }
+
+      .repo.dim {
+        opacity: 0.28;
       }
 
       .rank {
@@ -187,6 +361,30 @@
         padding-top: 0.15rem;
       }
 
+      .theme-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .theme-group h2 {
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin: 0 0 0.35rem;
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+      }
+
+      .theme-group h2 .n {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.75rem;
+        color: var(--muted);
+        font-weight: 500;
+      }
+
+      .theme-group.dim {
+        opacity: 0.28;
+      }
+
       .error,
       .loading {
         color: var(--muted);
@@ -219,6 +417,9 @@
           grid-column: 2;
           padding-top: 0;
         }
+        .lang-bar {
+          grid-template-columns: 5.5rem 1fr 1.25rem;
+        }
       }
     </style>
   </head>
@@ -227,7 +428,7 @@
       <p class="brand">GitHub Weekly Trend</p>
       <h1>週間スター急上昇 Top 10</h1>
       <p class="lede">
-        前週の GitHub Trending（weekly）上位と、短い傾向コメント。毎週自動更新。
+        偏り（言語・テーマ）を押すと下のリストが連動します。毎週自動更新。
       </p>
 
       <div class="diag" id="diag" aria-live="polite">
@@ -245,10 +446,29 @@
         </div>
       </div>
 
-      <p class="section-label">傾向コメント</p>
-      <div class="comment empty" id="comment">読み込み中…</div>
+      <p class="section-label">今週の読み</p>
+      <div class="headline empty" id="headline">読み込み中…</div>
+      <p class="momentum" id="momentum"></p>
 
-      <p class="section-label">Repositories</p>
+      <div class="facets" id="facets" hidden>
+        <div>
+          <p class="section-label">テーマ</p>
+          <div class="facet-row" id="theme-chips"></div>
+        </div>
+        <div>
+          <p class="section-label">言語</p>
+          <div class="lang-bars" id="lang-bars"></div>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <p class="section-label">Repositories</p>
+        <div class="view-toggle" role="group" aria-label="表示切替">
+          <button type="button" id="view-theme" aria-pressed="true">テーマ別</button>
+          <button type="button" id="view-rank" aria-pressed="false">順位</button>
+        </div>
+      </div>
+      <p class="filter-hint" id="filter-hint"></p>
       <div id="list"><p class="loading">data/weekly.json を読み込み中…</p></div>
 
       <footer>
@@ -260,6 +480,12 @@
     </main>
     <script>
       const STALE_MS = 8 * 24 * 60 * 60 * 1000; // 8 days
+
+      const state = {
+        data: null,
+        view: "theme", // theme | rank
+        filter: null, // { type: 'theme'|'language', id, label, repos: Set }
+      };
 
       function setDiag(el, text, level) {
         el.querySelector(".value").textContent = text;
@@ -304,62 +530,292 @@
         }
       }
 
-      function render(data) {
-        diagnose(data);
-
-        const commentEl = document.getElementById("comment");
-        const comment = (data.trendComment || "").trim();
-        if (comment) {
-          commentEl.textContent = comment;
-          commentEl.classList.remove("empty");
-        } else {
-          commentEl.textContent = "（傾向コメント未生成 — Routine 実行後に入ります）";
-          commentEl.classList.add("empty");
+      function insightsFrom(data) {
+        if (data.insights) return data.insights;
+        // legacy fallback from flat comment + repos
+        const languages = [];
+        const langMap = new Map();
+        for (const r of data.repos || []) {
+          const name = r.language || "Unknown";
+          if (!langMap.has(name)) langMap.set(name, { name, count: 0, repos: [] });
+          const e = langMap.get(name);
+          e.count += 1;
+          e.repos.push(r.name);
         }
+        languages.push(...langMap.values());
+        languages.sort((a, b) => b.count - a.count);
+        const headline = (data.trendComment || "").trim().split("\n")[0] || "";
+        return { headline, languages, themes: [], momentum: { max: null, median: null } };
+      }
+
+      function setFilter(next) {
+        state.filter = next;
+        paintFacets();
+        paintList();
+      }
+
+      function clearFilter() {
+        setFilter(null);
+      }
+
+      function paintFacets() {
+        const insights = insightsFrom(state.data);
+        const facets = document.getElementById("facets");
+        const themeEl = document.getElementById("theme-chips");
+        const langEl = document.getElementById("lang-bars");
+
+        if (!insights.themes.length && !insights.languages.length) {
+          facets.hidden = true;
+          return;
+        }
+        facets.hidden = false;
+
+        themeEl.replaceChildren();
+        for (const t of insights.themes) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "chip";
+          btn.setAttribute(
+            "aria-pressed",
+            state.filter?.type === "theme" && state.filter.id === t.id ? "true" : "false",
+          );
+          btn.innerHTML = `<span>${t.label}</span><span class="n">${t.count}</span>`;
+          btn.addEventListener("click", () => {
+            if (state.filter?.type === "theme" && state.filter.id === t.id) {
+              clearFilter();
+            } else {
+              setFilter({
+                type: "theme",
+                id: t.id,
+                label: t.label,
+                repos: new Set(t.repos),
+              });
+            }
+          });
+          themeEl.appendChild(btn);
+        }
+        if (!insights.themes.length) {
+          themeEl.innerHTML = `<span style="color:var(--muted);font-size:0.85rem">該当テーマなし</span>`;
+        }
+
+        const maxLang = Math.max(1, ...insights.languages.map((l) => l.count));
+        langEl.replaceChildren();
+        for (const l of insights.languages) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "lang-bar";
+          const id = l.name;
+          btn.setAttribute(
+            "aria-pressed",
+            state.filter?.type === "language" && state.filter.id === id ? "true" : "false",
+          );
+          const pct = Math.round((l.count / maxLang) * 100);
+          btn.innerHTML = `
+            <span class="name">${l.name}</span>
+            <span class="track"><span class="fill" style="width:${pct}%"></span></span>
+            <span class="n">${l.count}</span>
+          `;
+          btn.addEventListener("click", () => {
+            if (state.filter?.type === "language" && state.filter.id === id) {
+              clearFilter();
+            } else {
+              setFilter({
+                type: "language",
+                id,
+                label: l.name,
+                repos: new Set(l.repos),
+              });
+            }
+          });
+          langEl.appendChild(btn);
+        }
+      }
+
+      function repoMatchesFilter(repo) {
+        if (!state.filter) return true;
+        return state.filter.repos.has(repo.name);
+      }
+
+      function paintHint() {
+        const el = document.getElementById("filter-hint");
+        if (!state.filter) {
+          el.textContent = "";
+          return;
+        }
+        el.replaceChildren();
+        el.append(
+          document.createTextNode(
+            `${state.filter.type === "theme" ? "テーマ" : "言語"}: ${state.filter.label}（${state.filter.repos.size}件） · `,
+          ),
+        );
+        const clear = document.createElement("button");
+        clear.type = "button";
+        clear.textContent = "解除";
+        clear.addEventListener("click", clearFilter);
+        el.appendChild(clear);
+      }
+
+      function renderRepoItem(r) {
+        const li = document.createElement("li");
+        li.className = "repo";
+        li.dataset.name = r.name;
+        if (state.filter && !repoMatchesFilter(r)) li.classList.add("dim");
+
+        const delta =
+          r.starsThisPeriod != null
+            ? `+${r.starsThisPeriod.toLocaleString("en-US")}`
+            : "—";
+        const meta = [
+          r.language || "Unknown",
+          r.stars != null ? `★ ${r.stars.toLocaleString("en-US")}` : null,
+          r.forks != null ? `フォーク ${r.forks.toLocaleString("en-US")}` : null,
+        ]
+          .filter(Boolean)
+          .join(" · ");
+
+        li.innerHTML = `
+          <div class="rank">${String(r.rank).padStart(2, "0")}</div>
+          <div>
+            <a href="${r.url}" target="_blank" rel="noopener noreferrer">${r.name}</a>
+            <p class="desc">${r.description || ""}</p>
+            <div class="meta">${meta}</div>
+          </div>
+          <div class="delta" title="stars this week">${delta}</div>
+        `;
+        return li;
+      }
+
+      function paintList() {
+        paintHint();
+        const list = document.getElementById("list");
+        const repos = state.data.repos || [];
+        if (repos.length === 0) {
+          list.innerHTML =
+            '<p class="error">リポジトリが0件です。取得スクリプトまたはスクレイプ先を確認してください。</p>';
+          return;
+        }
+
+        if (state.view === "rank") {
+          const ol = document.createElement("ol");
+          ol.className = "repos";
+          for (const r of repos) ol.appendChild(renderRepoItem(r));
+          list.replaceChildren(ol);
+          return;
+        }
+
+        // theme-grouped view
+        const insights = insightsFrom(state.data);
+        const assigned = new Set();
+        const frag = document.createDocumentFragment();
+
+        for (const t of insights.themes) {
+          const groupRepos = t.repos
+            .map((name) => repos.find((r) => r.name === name))
+            .filter(Boolean);
+          for (const r of groupRepos) assigned.add(r.name);
+
+          const section = document.createElement("section");
+          section.className = "theme-group";
+          if (state.filter?.type === "theme" && state.filter.id !== t.id) {
+            section.classList.add("dim");
+          } else if (state.filter?.type === "language") {
+            const any = groupRepos.some((r) => state.filter.repos.has(r.name));
+            if (!any) section.classList.add("dim");
+          }
+
+          const h2 = document.createElement("h2");
+          h2.innerHTML = `${t.label}<span class="n">${t.count}</span>`;
+          section.appendChild(h2);
+
+          const ol = document.createElement("ol");
+          ol.className = "repos";
+          for (const r of groupRepos) ol.appendChild(renderRepoItem(r));
+          section.appendChild(ol);
+          frag.appendChild(section);
+        }
+
+        const other = repos.filter((r) => !assigned.has(r.name));
+        if (other.length) {
+          const section = document.createElement("section");
+          section.className = "theme-group";
+          if (state.filter) {
+            const any = other.some((r) => state.filter.repos.has(r.name));
+            if (!any) section.classList.add("dim");
+          }
+          const h2 = document.createElement("h2");
+          h2.innerHTML = `その他<span class="n">${other.length}</span>`;
+          section.appendChild(h2);
+          const ol = document.createElement("ol");
+          ol.className = "repos";
+          for (const r of other) ol.appendChild(renderRepoItem(r));
+          section.appendChild(ol);
+          frag.appendChild(section);
+        }
+
+        if (!insights.themes.length) {
+          const ol = document.createElement("ol");
+          ol.className = "repos";
+          for (const r of repos) ol.appendChild(renderRepoItem(r));
+          list.replaceChildren(ol);
+          return;
+        }
+
+        list.replaceChildren(frag);
+      }
+
+      function paintHeadline() {
+        const insights = insightsFrom(state.data);
+        const headlineEl = document.getElementById("headline");
+        const momentumEl = document.getElementById("momentum");
+        const headline = (insights.headline || "").trim();
+        if (headline) {
+          headlineEl.textContent = headline;
+          headlineEl.classList.remove("empty");
+        } else {
+          headlineEl.textContent = "（今週の読み未生成 — Routine で磨けます）";
+          headlineEl.classList.add("empty");
+        }
+
+        const m = insights.momentum || {};
+        if (m.max != null) {
+          momentumEl.textContent = `週間スター増分 最大 +${m.max.toLocaleString("en-US")} · 中央値 +${Number(m.median).toLocaleString("en-US")}`;
+        } else {
+          momentumEl.textContent = "";
+        }
+      }
+
+      function bindToolbar() {
+        const themeBtn = document.getElementById("view-theme");
+        const rankBtn = document.getElementById("view-rank");
+        themeBtn.addEventListener("click", () => {
+          state.view = "theme";
+          themeBtn.setAttribute("aria-pressed", "true");
+          rankBtn.setAttribute("aria-pressed", "false");
+          paintList();
+        });
+        rankBtn.addEventListener("click", () => {
+          state.view = "rank";
+          themeBtn.setAttribute("aria-pressed", "false");
+          rankBtn.setAttribute("aria-pressed", "true");
+          paintList();
+        });
+      }
+
+      function render(data) {
+        state.data = data;
+        diagnose(data);
+        paintHeadline();
+        paintFacets();
+        paintList();
 
         if (data.sourceUrl) {
           const a = document.getElementById("source");
           a.href = data.sourceUrl;
           a.textContent = data.sourceUrl.replace(/^https?:\/\//, "");
         }
-
-        const list = document.getElementById("list");
-        const repos = data.repos || [];
-        if (repos.length === 0) {
-          list.innerHTML = '<p class="error">リポジトリが0件です。取得スクリプトまたはスクレイプ先を確認してください。</p>';
-          return;
-        }
-
-        const ol = document.createElement("ol");
-        ol.className = "repos";
-        for (const r of repos) {
-          const li = document.createElement("li");
-          li.className = "repo";
-          const delta =
-            r.starsThisPeriod != null
-              ? `+${r.starsThisPeriod.toLocaleString("en-US")}`
-              : "—";
-          const meta = [
-            r.language || "Unknown",
-            r.stars != null ? `★ ${r.stars.toLocaleString("en-US")}` : null,
-            r.forks != null ? `フォーク ${r.forks.toLocaleString("en-US")}` : null,
-          ]
-            .filter(Boolean)
-            .join(" · ");
-
-          li.innerHTML = `
-            <div class="rank">${String(r.rank).padStart(2, "0")}</div>
-            <div>
-              <a href="${r.url}" target="_blank" rel="noopener noreferrer">${r.name}</a>
-              <p class="desc">${r.description || ""}</p>
-              <div class="meta">${meta}</div>
-            </div>
-            <div class="delta" title="stars this week">${delta}</div>
-          `;
-          ol.appendChild(li);
-        }
-        list.replaceChildren(ol);
       }
+
+      bindToolbar();
 
       fetch("./data/weekly.json", { cache: "no-store" })
         .then((r) => {

@@ -1,23 +1,32 @@
 # GitHub Weekly Trend Dashboard
 
-GitHub Trending（weekly）上位10と短い傾向コメントを、静的1ページで見る自分用ダッシュボード。
+GitHub Trending（weekly）上位10を、言語・テーマの偏りと連動させて見る自分用ダッシュボード。
 
 - サイト: https://jango-jango.github.io/github-trend-dashboard/
 - 仕様メモ（ローカル monorepo）: `plans/2026-08-04-github-ai-trend-dashboard.md`
 
 ## MVP スコープ
 
-- **やる**: 週間 Top10 取得 → 傾向コメント → GitHub Pages 表示 → 最終更新日時 / 取得件数の自己診断
-- **やらない**: AI 日次ニュース、日次/月間、通知、共有機能
+- **やる**: 週間 Top10 取得 → 構造化 insights（headline / 言語 / テーマ）→ 1画面ファセット表示 → 最終更新 / 取得件数の自己診断
+- **やらない**: AI 日次ニュース、日次/月間、通知、共有機能、タブ分割
+
+## 画面
+
+- **今週の読み** … 1〜2文の headline（自動生成。ROUTINE で磨ける）
+- **テーマチップ / 言語バー** … 押すと下のリストがハイライト連動
+- **Repositories** … 既定はテーマ別。順位表示にも切替可
 
 ## ローカル
 
 ```bash
-npm run fetch          # data/weekly.json を更新（傾向コメントも自動生成）
+npm run fetch          # data/weekly.json を更新（insights も自動生成）
 npm run serve          # http://localhost:4173
 ```
 
-`npm run fetch -- --keep-comment` で既存コメントを維持できる。
+オプション:
+
+- `npm run fetch -- --keep-headline` … 既存の headline を維持（旧 `--keep-comment` も可）
+- `npm run fetch -- --rebuild-insights` … 取得せず、既存 repos から insights だけ再計算
 
 ## データスキーマ (`data/weekly.json`)
 
@@ -25,7 +34,11 @@ npm run serve          # http://localhost:4173
 |---|---|
 | `updatedAt` | ISO8601。自己診断の鮮度判定に使う |
 | `count` | 取得件数（0 なら画面が赤く警告） |
-| `trendComment` | 3行程度の傾向コメント（言語・テーマ・増分） |
+| `insights.headline` | 今週の読み（1〜2文） |
+| `insights.languages[]` | name / count / repos |
+| `insights.themes[]` | id / label / count / repos |
+| `insights.momentum` | max / median（週間スター増分） |
+| `trendComment` | ログ・互換用の平坦テキスト（画面は `insights` を使う） |
 | `repos[]` | rank / name / url / description / language / stars / forks / starsThisPeriod |
 
 ## 自動更新
@@ -38,7 +51,7 @@ GitHub Actions が毎週月曜 09:00 JST（`0 0 * * 1` UTC）に:
 
 手動実行: Actions → **Weekly trending update** → Run workflow
 
-Claude Code Routine は任意（より長い解説コメントに差し替えたいとき）。雛形は [`ROUTINE.md`](ROUTINE.md)。
+Claude Code Routine は任意（headline を磨きたいとき）。雛形は [`ROUTINE.md`](ROUTINE.md)。
 
 ## 中止条件
 

@@ -1,9 +1,104 @@
 {
-  "updatedAt": "2026-08-04T05:10:53.977Z",
+  "updatedAt": "2026-08-04T05:10:42.178Z",
   "period": "weekly",
   "sourceUrl": "https://github.com/trending?since=weekly",
   "count": 10,
-  "trendComment": "言語の偏り: TypeScript(4)、Rust(2)、Python(2)。\nテーマの偏り: コーディングエージェント／スキル(5)、ローカル／自前ホストAI(1)、セキュリティ／リバース(1)。個別リポジトリの評価ではなく横断的な傾向として見る。\n週間スター増分は最大 +7,554、中央値 +5,012。",
+  "insights": {
+    "headline": "コーディングエージェント／スキルが 5 件（上位の中心）。横断的な偏りとして見る。",
+    "languages": [
+      {
+        "name": "TypeScript",
+        "count": 4,
+        "repos": [
+          "moeru-ai/airi",
+          "opengeos/GeoLibre",
+          "pascalorg/editor",
+          "different-ai/openwork"
+        ]
+      },
+      {
+        "name": "Python",
+        "count": 2,
+        "repos": [
+          "virgiliojr94/book-to-skill",
+          "ayghri/i-have-adhd"
+        ]
+      },
+      {
+        "name": "Rust",
+        "count": 2,
+        "repos": [
+          "block/buzz",
+          "1jehuang/jcode"
+        ]
+      },
+      {
+        "name": "Jupyter Notebook",
+        "count": 1,
+        "repos": [
+          "microsoft/AI-For-Beginners"
+        ]
+      },
+      {
+        "name": "PowerShell",
+        "count": 1,
+        "repos": [
+          "zhaoxuya520/reverse-skill"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "id": "agent-skills",
+        "label": "コーディングエージェント／スキル",
+        "count": 5,
+        "repos": [
+          "virgiliojr94/book-to-skill",
+          "zhaoxuya520/reverse-skill",
+          "ayghri/i-have-adhd",
+          "1jehuang/jcode",
+          "different-ai/openwork"
+        ]
+      },
+      {
+        "id": "devtools",
+        "label": "エディタ／開発ツール",
+        "count": 1,
+        "repos": [
+          "pascalorg/editor"
+        ]
+      },
+      {
+        "id": "security",
+        "label": "セキュリティ／リバース",
+        "count": 1,
+        "repos": [
+          "zhaoxuya520/reverse-skill"
+        ]
+      },
+      {
+        "id": "local-ai",
+        "label": "ローカル／自前ホストAI",
+        "count": 1,
+        "repos": [
+          "moeru-ai/airi"
+        ]
+      },
+      {
+        "id": "learning",
+        "label": "学習・チュートリアル",
+        "count": 1,
+        "repos": [
+          "microsoft/AI-For-Beginners"
+        ]
+      }
+    ],
+    "momentum": {
+      "max": 7554,
+      "median": 5012
+    }
+  },
+  "trendComment": "コーディングエージェント／スキルが 5 件（上位の中心）。横断的な偏りとして見る。\n言語: TypeScript(4)、Python(2)、Rust(2)\nテーマ: コーディングエージェント／スキル(5)、エディタ／開発ツール(1)、セキュリティ／リバース(1)\n週間スター増分 最大 +7,554、中央値 +5,012",
   "repos": [
     {
       "rank": 1,
