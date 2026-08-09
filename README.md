@@ -27,6 +27,7 @@ npm run serve          # http://localhost:4173
 
 - `npm run fetch -- --keep-headline` … 既存の headline を維持（旧 `--keep-comment` も可）
 - `npm run fetch -- --rebuild-insights` … 取得せず、既存 repos から insights だけ再計算
+- `npm run fetch -- --fill-summaries` … 欠けている `summaryJa` だけ補完（機械翻訳・既存は維持）
 
 ## データスキーマ (`data/weekly.json`)
 
@@ -39,7 +40,9 @@ npm run serve          # http://localhost:4173
 | `insights.themes[]` | id / label / count / repos |
 | `insights.momentum` | max / median（週間スター増分） |
 | `trendComment` | ログ・互換用の平坦テキスト（画面は `insights` を使う） |
-| `repos[]` | rank / name / url / description / language / stars / forks / starsThisPeriod |
+| `repos[]` | rank / name / url / description / **summaryJa** / language / stars / forks / starsThisPeriod |
+
+画面は `summaryJa`（日本語要約）を主表示し、英語 `description` は補助表示。週次取得時は同名リポジトリの `summaryJa` を引き継ぎ、新規のみ機械翻訳で埋める。
 
 ## 自動更新
 

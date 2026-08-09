@@ -108,7 +108,8 @@
       "language": "Rust",
       "stars": 21966,
       "forks": 2408,
-      "starsThisPeriod": 7372
+      "starsThisPeriod": 7372,
+      "summaryJa": "集団で意思疎通・合意形成するための「ハイブマインド」型コミュニケーション基盤。"
     },
     {
       "rank": 2,
@@ -118,7 +119,8 @@
       "language": "Jupyter Notebook",
       "stars": 61035,
       "forks": 11869,
-      "starsThisPeriod": 7554
+      "starsThisPeriod": 7554,
+      "summaryJa": "初心者向けのAI入門教材。12週間・24レッスン構成。"
     },
     {
       "rank": 3,
@@ -128,7 +130,8 @@
       "language": "Python",
       "stars": 16012,
       "forks": 1712,
-      "starsThisPeriod": 5405
+      "starsThisPeriod": 5405,
+      "summaryJa": "技術書のPDFを、作業中に参照できるClaude Code用スキルへ変換するツール。"
     },
     {
       "rank": 4,
@@ -138,7 +141,8 @@
       "language": "PowerShell",
       "stars": 16257,
       "forks": 2277,
-      "starsThisPeriod": 6154
+      "starsThisPeriod": 6154,
+      "summaryJa": "リバース／セキュリティ研究向けのスキルルーター。必要ツールの起動と知識ベース更新を支援。"
     },
     {
       "rank": 5,
@@ -148,7 +152,8 @@
       "language": "Python",
       "stars": 16374,
       "forks": 925,
-      "starsThisPeriod": 5012
+      "starsThisPeriod": 5012,
+      "summaryJa": "コーディングエージェントの回答が埋もれないよう、簡潔な出力に寄せるスキル。"
     },
     {
       "rank": 6,
@@ -158,7 +163,8 @@
       "language": "Rust",
       "stars": 15625,
       "forks": 1722,
-      "starsThisPeriod": 3735
+      "starsThisPeriod": 3735,
+      "summaryJa": "メモリ（RAM）消費を抑えたコーディングエージェント用ハーネス。"
     },
     {
       "rank": 7,
@@ -168,7 +174,8 @@
       "language": "TypeScript",
       "stars": 46748,
       "forks": 4612,
-      "starsThisPeriod": 2978
+      "starsThisPeriod": 2978,
+      "summaryJa": "自前ホスト可能なAIコンパニオン。音声チャットやゲーム連携などに対応。"
     },
     {
       "rank": 8,
@@ -178,7 +185,8 @@
       "language": "TypeScript",
       "stars": 5242,
       "forks": 521,
-      "starsThisPeriod": 2630
+      "starsThisPeriod": 2630,
+      "summaryJa": "ブラウザやデスクトップで動く、軽量なクラウドネイティブGISプラットフォーム。"
     },
     {
       "rank": 9,
@@ -188,7 +196,8 @@
       "language": "TypeScript",
       "stars": 20957,
       "forks": 2678,
-      "starsThisPeriod": 2953
+      "starsThisPeriod": 2953,
+      "summaryJa": "3Dの建築プロジェクトを作成・共有できるエディタ。"
     },
     {
       "rank": 10,
@@ -198,7 +207,8 @@
       "language": "TypeScript",
       "stars": 20726,
       "forks": 2032,
-      "starsThisPeriod": 3429
+      "starsThisPeriod": 3429,
+      "summaryJa": "Claude Coworkのオープンソース代替（opencodeベース）。"
     }
   ]
 }

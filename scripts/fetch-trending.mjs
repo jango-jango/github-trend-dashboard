@@ -207,18 +207,92 @@ function readPrev() {
   }
 }
 
+function prevSummaryMap(prev) {
+  const map = new Map();
+  for (const r of prev?.repos || []) {
+    if (r?.name && typeof r.summaryJa === "string" && r.summaryJa.trim()) {
+      map.set(r.name, r.summaryJa.trim());
+    }
+  }
+  return map;
+}
+
+function looksMostlyJapanese(text) {
+  const jp = (text.match(/[\u3040-\u30ff\u4e00-\u9fff]/g) || []).length;
+  const latin = (text.match(/[A-Za-z]/g) || []).length;
+  return jp >= 4 && jp >= latin * 0.4;
+}
+
+function clipSummary(text, max = 120) {
+  const t = String(text).replace(/\s+/g, " ").trim();
+  if (t.length <= max) return t;
+  return `${t.slice(0, max - 1)}…`;
+}
+
+/** Best-effort EN→JA via public Google Translate endpoint (no API key). */
+async function translateToJa(text) {
+  const q = clipSummary(text, 400);
+  if (!q) return "";
+  if (looksMostlyJapanese(q)) return clipSummary(q);
+  const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ja&dt=t&q=${encodeURIComponent(q)}`;
+  const res = await fetch(url, {
+    headers: { "User-Agent": UA, Accept: "application/json" },
+  });
+  if (!res.ok) throw new Error(`translate HTTP ${res.status}`);
+  const data = await res.json();
+  const parts = Array.isArray(data?.[0]) ? data[0] : [];
+  const joined = parts
+    .map((row) => (Array.isArray(row) ? row[0] : null))
+    .filter((s) => typeof s === "string")
+    .join("");
+  return clipSummary(joined);
+}
+
+async function attachSummaryJa(repos, prev) {
+  const kept = prevSummaryMap(prev);
+  let filled = 0;
+  let carried = 0;
+  for (const r of repos) {
+    if (typeof r.summaryJa === "string" && r.summaryJa.trim()) {
+      r.summaryJa = clipSummary(r.summaryJa);
+      continue;
+    }
+    if (kept.has(r.name)) {
+      r.summaryJa = kept.get(r.name);
+      carried += 1;
+      continue;
+    }
+    const source = (r.description || "").trim();
+    if (!source) {
+      r.summaryJa = "";
+      continue;
+    }
+    try {
+      r.summaryJa = await translateToJa(source);
+      if (r.summaryJa) filled += 1;
+      // gentle pacing for the free endpoint
+      await new Promise((resolve) => setTimeout(resolve, 150));
+    } catch (err) {
+      console.warn(`summaryJa failed for ${r.name}: ${err.message}`);
+      r.summaryJa = "";
+    }
+  }
+  return { filled, carried };
+}
+
 async function main() {
   const keepHeadline =
     process.argv.includes("--keep-headline") ||
     process.argv.includes("--keep-comment");
   const rebuildOnly = process.argv.includes("--rebuild-insights");
+  const fillSummaries = process.argv.includes("--fill-summaries");
 
   let repos;
   let updatedAt = new Date().toISOString();
   let sourceUrl = SOURCE;
   const prev = readPrev();
 
-  if (rebuildOnly) {
+  if (rebuildOnly || fillSummaries) {
     if (!prev?.repos?.length) {
       console.error("No existing repos in data/weekly.json to rebuild.");
       process.exit(2);
@@ -249,12 +323,16 @@ async function main() {
     }
   }
 
+  const { filled, carried } = await attachSummaryJa(repos, prev);
+
   let headline;
   if (keepHeadline && prev?.insights?.headline?.trim()) {
     headline = prev.insights.headline.trim();
   } else if (keepHeadline && prev?.trendComment?.trim()) {
     // legacy: first line of old comment as headline
     headline = prev.trendComment.trim().split("\n")[0];
+  } else if (fillSummaries && prev?.insights?.headline?.trim()) {
+    headline = prev.insights.headline.trim();
   }
 
   const insights = buildInsights(repos, headline);
@@ -271,7 +349,13 @@ async function main() {
   };
 
   writeFileSync(OUT, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-  console.log(`Wrote ${repos.length} repos → ${OUT}${rebuildOnly ? " (insights only)" : ""}`);
+  const mode = rebuildOnly
+    ? " (insights only)"
+    : fillSummaries
+      ? " (summaries)"
+      : "";
+  console.log(`Wrote ${repos.length} repos → ${OUT}${mode}`);
+  console.log(`summaryJa: carried ${carried}, translated ${filled}`);
   console.log("--- headline ---");
   console.log(insights.headline);
   console.log("--- themes ---");
@@ -282,6 +366,7 @@ async function main() {
     console.log(
       `${String(r.rank).padStart(2)}. +${r.starsThisPeriod ?? "?"}  ${r.name}`,
     );
+    if (r.summaryJa) console.log(`    ${r.summaryJa}`);
   }
 }
 
