@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T05:10:42.178Z",
+  "updatedAt": "2026-08-10T01:03:52.935Z",
   "period": "weekly",
   "sourceUrl": "https://github.com/trending?since=weekly",
   "count": 10,
@@ -7,13 +7,11 @@
     "headline": "コーディングエージェント／スキルが 5 件（上位の中心）。横断的な偏りとして見る。",
     "languages": [
       {
-        "name": "TypeScript",
-        "count": 4,
+        "name": "Jupyter Notebook",
+        "count": 2,
         "repos": [
-          "moeru-ai/airi",
-          "opengeos/GeoLibre",
-          "pascalorg/editor",
-          "different-ai/openwork"
+          "lyogavin/airllm",
+          "microsoft/AI-For-Beginners"
         ]
       },
       {
@@ -21,22 +19,29 @@
         "count": 2,
         "repos": [
           "virgiliojr94/book-to-skill",
-          "ayghri/i-have-adhd"
+          "google/skills"
         ]
       },
       {
-        "name": "Rust",
+        "name": "TypeScript",
         "count": 2,
         "repos": [
-          "block/buzz",
-          "1jehuang/jcode"
+          "TencentCloud/TencentDB-Agent-Memory",
+          "usekaneo/kaneo"
         ]
       },
       {
-        "name": "Jupyter Notebook",
+        "name": "Clojure",
         "count": 1,
         "repos": [
-          "microsoft/AI-For-Beginners"
+          "unclebob/swarm-forge"
+        ]
+      },
+      {
+        "name": "Go",
+        "count": 1,
+        "repos": [
+          "esengine/DeepSeek-Reasonix"
         ]
       },
       {
@@ -44,6 +49,13 @@
         "count": 1,
         "repos": [
           "zhaoxuya520/reverse-skill"
+        ]
+      },
+      {
+        "name": "Rust",
+        "count": 1,
+        "repos": [
+          "firecrawl/pdf-inspector"
         ]
       }
     ],
@@ -53,19 +65,11 @@
         "label": "コーディングエージェント／スキル",
         "count": 5,
         "repos": [
-          "virgiliojr94/book-to-skill",
           "zhaoxuya520/reverse-skill",
-          "ayghri/i-have-adhd",
-          "1jehuang/jcode",
-          "different-ai/openwork"
-        ]
-      },
-      {
-        "id": "devtools",
-        "label": "エディタ／開発ツール",
-        "count": 1,
-        "repos": [
-          "pascalorg/editor"
+          "TencentCloud/TencentDB-Agent-Memory",
+          "esengine/DeepSeek-Reasonix",
+          "virgiliojr94/book-to-skill",
+          "google/skills"
         ]
       },
       {
@@ -74,14 +78,6 @@
         "count": 1,
         "repos": [
           "zhaoxuya520/reverse-skill"
-        ]
-      },
-      {
-        "id": "local-ai",
-        "label": "ローカル／自前ホストAI",
-        "count": 1,
-        "repos": [
-          "moeru-ai/airi"
         ]
       },
       {
@@ -94,121 +90,121 @@
       }
     ],
     "momentum": {
-      "max": 7554,
-      "median": 5012
+      "max": 9784,
+      "median": 5129
     }
   },
-  "trendComment": "コーディングエージェント／スキルが 5 件（上位の中心）。横断的な偏りとして見る。\n言語: TypeScript(4)、Python(2)、Rust(2)\nテーマ: コーディングエージェント／スキル(5)、エディタ／開発ツール(1)、セキュリティ／リバース(1)\n週間スター増分 最大 +7,554、中央値 +5,012",
+  "trendComment": "コーディングエージェント／スキルが 5 件（上位の中心）。横断的な偏りとして見る。\n言語: Jupyter Notebook(2)、Python(2)、TypeScript(2)\nテーマ: コーディングエージェント／スキル(5)、セキュリティ／リバース(1)、学習・チュートリアル(1)\n週間スター増分 最大 +9,784、中央値 +5,129",
   "repos": [
     {
       "rank": 1,
-      "name": "block/buzz",
-      "url": "https://github.com/block/buzz",
-      "description": "A hive mind communication platform",
+      "name": "firecrawl/pdf-inspector",
+      "url": "https://github.com/firecrawl/pdf-inspector",
+      "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
       "language": "Rust",
-      "stars": 21966,
-      "forks": 2408,
-      "starsThisPeriod": 7372,
-      "summaryJa": "集団で意思疎通・合意形成するための「ハイブマインド」型コミュニケーション基盤。"
+      "stars": 13875,
+      "forks": 950,
+      "starsThisPeriod": 8641,
+      "summaryJa": "PDF の検査、分類、テキスト抽出のための高速 Rust ライブラリ。スキャンされた PDF とテキストベースの PDF をインテリジェントに検出し、スマートなルーティング決定を可能にします。"
     },
     {
       "rank": 2,
-      "name": "microsoft/AI-For-Beginners",
-      "url": "https://github.com/microsoft/AI-For-Beginners",
-      "description": "12 Weeks, 24 Lessons, AI for All!",
-      "language": "Jupyter Notebook",
-      "stars": 61035,
-      "forks": 11869,
-      "starsThisPeriod": 7554,
-      "summaryJa": "初心者向けのAI入門教材。12週間・24レッスン構成。"
-    },
-    {
-      "rank": 3,
-      "name": "virgiliojr94/book-to-skill",
-      "url": "https://github.com/virgiliojr94/book-to-skill",
-      "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
-      "language": "Python",
-      "stars": 16012,
-      "forks": 1712,
-      "starsThisPeriod": 5405,
-      "summaryJa": "技術書のPDFを、作業中に参照できるClaude Code用スキルへ変換するツール。"
-    },
-    {
-      "rank": 4,
       "name": "zhaoxuya520/reverse-skill",
       "url": "https://github.com/zhaoxuya520/reverse-skill",
       "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
       "language": "PowerShell",
-      "stars": 16257,
-      "forks": 2277,
-      "starsThisPeriod": 6154,
+      "stars": 22518,
+      "forks": 3067,
+      "starsThisPeriod": 9784,
       "summaryJa": "リバース／セキュリティ研究向けのスキルルーター。必要ツールの起動と知識ベース更新を支援。"
     },
     {
+      "rank": 3,
+      "name": "TencentCloud/TencentDB-Agent-Memory",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
+      "language": "TypeScript",
+      "stars": 18763,
+      "forks": 1693,
+      "starsThisPeriod": 8003,
+      "summaryJa": "TencentDB Agent Memory は、AI エージェント用のチームレベルのメモリ ハブです。会話、ドキュメント、コードを 4 つの再利用可能なメモリ資産 (チャット メモリ、スキル、LLM-Wiki、コード グラフ) に変換し…"
+    },
+    {
+      "rank": 4,
+      "name": "lyogavin/airllm",
+      "url": "https://github.com/lyogavin/airllm",
+      "description": "AirLLM 70B inference with single 4GB GPU",
+      "language": "Jupyter Notebook",
+      "stars": 30375,
+      "forks": 3235,
+      "starsThisPeriod": 5129,
+      "summaryJa": "シングル 4GB GPU による AirLLM 70B 推論"
+    },
+    {
       "rank": 5,
-      "name": "ayghri/i-have-adhd",
-      "url": "https://github.com/ayghri/i-have-adhd",
-      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-      "language": "Python",
-      "stars": 16374,
-      "forks": 925,
-      "starsThisPeriod": 5012,
-      "summaryJa": "コーディングエージェントの回答が埋もれないよう、簡潔な出力に寄せるスキル。"
+      "name": "esengine/DeepSeek-Reasonix",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+      "language": "Go",
+      "stars": 33449,
+      "forks": 2163,
+      "starsThisPeriod": 4709,
+      "summaryJa": "端末用の DeepSeek ネイティブ AI コーディング エージェント。プレフィックス キャッシュの安定性を中心に設計されているため、実行したままにできます。"
     },
     {
       "rank": 6,
-      "name": "1jehuang/jcode",
-      "url": "https://github.com/1jehuang/jcode",
-      "description": "The most RAM efficient harness",
-      "language": "Rust",
-      "stars": 15625,
-      "forks": 1722,
-      "starsThisPeriod": 3735,
-      "summaryJa": "メモリ（RAM）消費を抑えたコーディングエージェント用ハーネス。"
+      "name": "microsoft/AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "description": "12 Weeks, 24 Lessons, AI for All!",
+      "language": "Jupyter Notebook",
+      "stars": 64034,
+      "forks": 12392,
+      "starsThisPeriod": 5514,
+      "summaryJa": "初心者向けのAI入門教材。12週間・24レッスン構成。"
     },
     {
       "rank": 7,
-      "name": "moeru-ai/airi",
-      "url": "https://github.com/moeru-ai/airi",
-      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "name": "usekaneo/kaneo",
+      "url": "https://github.com/usekaneo/kaneo",
+      "description": "🎯 All you need. Nothing you don't. Open source project management that works for you, not against you.",
       "language": "TypeScript",
-      "stars": 46748,
-      "forks": 4612,
-      "starsThisPeriod": 2978,
-      "summaryJa": "自前ホスト可能なAIコンパニオン。音声チャットやゲーム連携などに対応。"
+      "stars": 7903,
+      "forks": 630,
+      "starsThisPeriod": 1952,
+      "summaryJa": "🎯 必要なものはすべて揃っています。あなたがやらないことは何もありません。あなたに不利ではなく、あなたのために機能するオープンソース プロジェクト管理。"
     },
     {
       "rank": 8,
-      "name": "opengeos/GeoLibre",
-      "url": "https://github.com/opengeos/GeoLibre",
-      "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
-      "language": "TypeScript",
-      "stars": 5242,
-      "forks": 521,
-      "starsThisPeriod": 2630,
-      "summaryJa": "ブラウザやデスクトップで動く、軽量なクラウドネイティブGISプラットフォーム。"
+      "name": "virgiliojr94/book-to-skill",
+      "url": "https://github.com/virgiliojr94/book-to-skill",
+      "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "language": "Python",
+      "stars": 19442,
+      "forks": 2078,
+      "starsThisPeriod": 4121,
+      "summaryJa": "技術書のPDFを、作業中に参照できるClaude Code用スキルへ変換するツール。"
     },
     {
       "rank": 9,
-      "name": "pascalorg/editor",
-      "url": "https://github.com/pascalorg/editor",
-      "description": "Create and share 3D architectural projects.",
-      "language": "TypeScript",
-      "stars": 20957,
-      "forks": 2678,
-      "starsThisPeriod": 2953,
-      "summaryJa": "3Dの建築プロジェクトを作成・共有できるエディタ。"
+      "name": "google/skills",
+      "url": "https://github.com/google/skills",
+      "description": "Agent Skills for Google products and technologies",
+      "language": "Python",
+      "stars": 17229,
+      "forks": 1393,
+      "starsThisPeriod": 1626,
+      "summaryJa": "Google の製品とテクノロジーに関するエージェント スキル"
     },
     {
       "rank": 10,
-      "name": "different-ai/openwork",
-      "url": "https://github.com/different-ai/openwork",
-      "description": "The open-source alternative to Claude Cowork (powered by opencode)",
-      "language": "TypeScript",
-      "stars": 20726,
-      "forks": 2032,
-      "starsThisPeriod": 3429,
-      "summaryJa": "Claude Coworkのオープンソース代替（opencodeベース）。"
+      "name": "unclebob/swarm-forge",
+      "url": "https://github.com/unclebob/swarm-forge",
+      "description": "A simple tool for coordinating several AI agents.",
+      "language": "Clojure",
+      "stars": 2052,
+      "forks": 218,
+      "starsThisPeriod": 562,
+      "summaryJa": "複数の AI エージェントを調整するためのシンプルなツール。"
     }
   ]
 }
