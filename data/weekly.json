@@ -1,61 +1,49 @@
 {
-  "updatedAt": "2026-08-10T01:03:52.935Z",
+  "updatedAt": "2026-08-17T00:43:30.311Z",
   "period": "weekly",
   "sourceUrl": "https://github.com/trending?since=weekly",
   "count": 10,
   "insights": {
-    "headline": "コーディングエージェント／スキルが 5 件（上位の中心）。横断的な偏りとして見る。",
+    "headline": "コーディングエージェント／スキルが 4 件（上位の中心）。横断的な偏りとして見る。",
     "languages": [
       {
-        "name": "Jupyter Notebook",
-        "count": 2,
-        "repos": [
-          "lyogavin/airllm",
-          "microsoft/AI-For-Beginners"
-        ]
-      },
-      {
         "name": "Python",
+        "count": 4,
+        "repos": [
+          "semantica-agi/semantica",
+          "megadose/holehe",
+          "cactus-compute/needle",
+          "vitali87/code-graph-rag"
+        ]
+      },
+      {
+        "name": "JavaScript",
         "count": 2,
         "repos": [
-          "virgiliojr94/book-to-skill",
-          "google/skills"
-        ]
-      },
-      {
-        "name": "TypeScript",
-        "count": 2,
-        "repos": [
-          "TencentCloud/TencentDB-Agent-Memory",
-          "usekaneo/kaneo"
-        ]
-      },
-      {
-        "name": "Clojure",
-        "count": 1,
-        "repos": [
-          "unclebob/swarm-forge"
-        ]
-      },
-      {
-        "name": "Go",
-        "count": 1,
-        "repos": [
-          "esengine/DeepSeek-Reasonix"
-        ]
-      },
-      {
-        "name": "PowerShell",
-        "count": 1,
-        "repos": [
-          "zhaoxuya520/reverse-skill"
+          "ToolJet/ToolJet",
+          "addyosmani/agent-skills"
         ]
       },
       {
         "name": "Rust",
+        "count": 2,
+        "repos": [
+          "NVIDIA-NeMo/Switchyard",
+          "macro-inc/macro"
+        ]
+      },
+      {
+        "name": "HTML",
         "count": 1,
         "repos": [
-          "firecrawl/pdf-inspector"
+          "cathrynlavery/diagram-design"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "count": 1,
+        "repos": [
+          "PrimeIntellect-ai/prime-agent"
         ]
       }
     ],
@@ -63,148 +51,131 @@
       {
         "id": "agent-skills",
         "label": "コーディングエージェント／スキル",
-        "count": 5,
+        "count": 4,
         "repos": [
-          "zhaoxuya520/reverse-skill",
-          "TencentCloud/TencentDB-Agent-Memory",
-          "esengine/DeepSeek-Reasonix",
-          "virgiliojr94/book-to-skill",
-          "google/skills"
-        ]
-      },
-      {
-        "id": "security",
-        "label": "セキュリティ／リバース",
-        "count": 1,
-        "repos": [
-          "zhaoxuya520/reverse-skill"
-        ]
-      },
-      {
-        "id": "learning",
-        "label": "学習・チュートリアル",
-        "count": 1,
-        "repos": [
-          "microsoft/AI-For-Beginners"
+          "cathrynlavery/diagram-design",
+          "PrimeIntellect-ai/prime-agent",
+          "NVIDIA-NeMo/Switchyard",
+          "addyosmani/agent-skills"
         ]
       }
     ],
     "momentum": {
-      "max": 9784,
-      "median": 5129
+      "max": 15600,
+      "median": 2882
     }
   },
-  "trendComment": "コーディングエージェント／スキルが 5 件（上位の中心）。横断的な偏りとして見る。\n言語: Jupyter Notebook(2)、Python(2)、TypeScript(2)\nテーマ: コーディングエージェント／スキル(5)、セキュリティ／リバース(1)、学習・チュートリアル(1)\n週間スター増分 最大 +9,784、中央値 +5,129",
+  "trendComment": "コーディングエージェント／スキルが 4 件（上位の中心）。横断的な偏りとして見る。\n言語: Python(4)、JavaScript(2)、Rust(2)\nテーマ: コーディングエージェント／スキル(4)\n週間スター増分 最大 +15,600、中央値 +2,882",
   "repos": [
     {
       "rank": 1,
-      "name": "firecrawl/pdf-inspector",
-      "url": "https://github.com/firecrawl/pdf-inspector",
-      "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
-      "language": "Rust",
-      "stars": 13875,
-      "forks": 950,
-      "starsThisPeriod": 8641,
-      "summaryJa": "PDF の検査、分類、テキスト抽出のための高速 Rust ライブラリ。スキャンされた PDF とテキストベースの PDF をインテリジェントに検出し、スマートなルーティング決定を可能にします。"
+      "name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
+      "language": "HTML",
+      "stars": 19514,
+      "forks": 1199,
+      "starsThisPeriod": 15600,
+      "summaryJa": "Claude Code の 29 種類の編集図。自己完結型の HTML + SVG。影もなければ、マーメイドスロップもありません。"
     },
     {
       "rank": 2,
-      "name": "zhaoxuya520/reverse-skill",
-      "url": "https://github.com/zhaoxuya520/reverse-skill",
-      "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
-      "language": "PowerShell",
-      "stars": 22518,
-      "forks": 3067,
-      "starsThisPeriod": 9784,
-      "summaryJa": "リバース／セキュリティ研究向けのスキルルーター。必要ツールの起動と知識ベース更新を支援。"
+      "name": "semantica-agi/semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
+      "language": "Python",
+      "stars": 8183,
+      "forks": 838,
+      "starsThisPeriod": 5284,
+      "summaryJa": "コンテキストおよび説明責任のある AI システムのためのグラフネイティブ インフラストラクチャ"
     },
     {
       "rank": 3,
-      "name": "TencentCloud/TencentDB-Agent-Memory",
-      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-      "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
+      "name": "PrimeIntellect-ai/prime-agent",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
       "language": "TypeScript",
-      "stars": 18763,
-      "forks": 1693,
-      "starsThisPeriod": 8003,
-      "summaryJa": "TencentDB Agent Memory は、AI エージェント用のチームレベルのメモリ ハブです。会話、ドキュメント、コードを 4 つの再利用可能なメモリ資産 (チャット メモリ、スキル、LLM-Wiki、コード グラフ) に変換し…"
+      "stars": 16570,
+      "forks": 1785,
+      "starsThisPeriod": 6435,
+      "summaryJa": "ワークフローや長時間実行される自律タスクをコーディングするための自己改善型 RLM エージェント。"
     },
     {
       "rank": 4,
-      "name": "lyogavin/airllm",
-      "url": "https://github.com/lyogavin/airllm",
-      "description": "AirLLM 70B inference with single 4GB GPU",
-      "language": "Jupyter Notebook",
-      "stars": 30375,
-      "forks": 3235,
-      "starsThisPeriod": 5129,
-      "summaryJa": "シングル 4GB GPU による AirLLM 70B 推論"
+      "name": "NVIDIA-NeMo/Switchyard",
+      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
+      "description": "Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization.",
+      "language": "Rust",
+      "stars": 1685,
+      "forks": 153,
+      "starsThisPeriod": 1435,
+      "summaryJa": "Switchyard を使用すると、LLM アプリケーションはネイティブの OpenAI と Anthropic API の互換性を維持しながら、モデルやプロバイダー間でトラフィックをルーティングできるため、柔軟なモデル選択、ベンチマーク…"
     },
     {
       "rank": 5,
-      "name": "esengine/DeepSeek-Reasonix",
-      "url": "https://github.com/esengine/DeepSeek-Reasonix",
-      "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
-      "language": "Go",
-      "stars": 33449,
-      "forks": 2163,
-      "starsThisPeriod": 4709,
-      "summaryJa": "端末用の DeepSeek ネイティブ AI コーディング エージェント。プレフィックス キャッシュの安定性を中心に設計されているため、実行したままにできます。"
+      "name": "megadose/holehe",
+      "url": "https://github.com/megadose/holehe",
+      "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
+      "language": "Python",
+      "stars": 13291,
+      "forks": 1756,
+      "starsThisPeriod": 1287,
+      "summaryJa": "Holehe を使用すると、メールが twitter や instagram などの別のサイトで使用されているかどうかを確認したり、パスワードを忘れた場合はサイトの情報を取得したりできます。"
     },
     {
       "rank": 6,
-      "name": "microsoft/AI-For-Beginners",
-      "url": "https://github.com/microsoft/AI-For-Beginners",
-      "description": "12 Weeks, 24 Lessons, AI for All!",
-      "language": "Jupyter Notebook",
-      "stars": 64034,
-      "forks": 12392,
-      "starsThisPeriod": 5514,
-      "summaryJa": "初心者向けのAI入門教材。12週間・24レッスン構成。"
+      "name": "cactus-compute/needle",
+      "url": "https://github.com/cactus-compute/needle",
+      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
+      "language": "Python",
+      "stars": 6563,
+      "forks": 433,
+      "starsThisPeriod": 2950,
+      "summaryJa": "小型デバイス向けの 14MB 基本モデル。電話、ウェアラブル、スマートホーム、ロボットなど。"
     },
     {
       "rank": 7,
-      "name": "usekaneo/kaneo",
-      "url": "https://github.com/usekaneo/kaneo",
-      "description": "🎯 All you need. Nothing you don't. Open source project management that works for you, not against you.",
-      "language": "TypeScript",
-      "stars": 7903,
-      "forks": 630,
-      "starsThisPeriod": 1952,
-      "summaryJa": "🎯 必要なものはすべて揃っています。あなたがやらないことは何もありません。あなたに不利ではなく、あなたのために機能するオープンソース プロジェクト管理。"
+      "name": "macro-inc/macro",
+      "url": "https://github.com/macro-inc/macro",
+      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "language": "Rust",
+      "stars": 3407,
+      "forks": 338,
+      "starsThisPeriod": 2588,
+      "summaryJa": "マクロは、電子メール、チャット、ドキュメント、タスク、エージェント、通話、CRM などのチーム向けの統合ワークスペースであり、共有 AI メモリとともに @ リンクされています。"
     },
     {
       "rank": 8,
-      "name": "virgiliojr94/book-to-skill",
-      "url": "https://github.com/virgiliojr94/book-to-skill",
-      "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "name": "vitali87/code-graph-rag",
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
       "language": "Python",
-      "stars": 19442,
-      "forks": 2078,
-      "starsThisPeriod": 4121,
-      "summaryJa": "技術書のPDFを、作業中に参照できるClaude Code用スキルへ変換するツール。"
+      "stars": 4429,
+      "forks": 598,
+      "starsThisPeriod": 1686,
+      "summaryJa": "モノリポジトリ用の究極の RAG。 AI とナレッジ グラフの力を利用して、多言語コードベースをクエリ、理解、編集します"
     },
     {
       "rank": 9,
-      "name": "google/skills",
-      "url": "https://github.com/google/skills",
-      "description": "Agent Skills for Google products and technologies",
-      "language": "Python",
-      "stars": 17229,
-      "forks": 1393,
-      "starsThisPeriod": 1626,
-      "summaryJa": "Google の製品とテクノロジーに関するエージェント スキル"
+      "name": "ToolJet/ToolJet",
+      "url": "https://github.com/ToolJet/ToolJet",
+      "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
+      "language": "JavaScript",
+      "stars": 40025,
+      "forks": 5330,
+      "starsThisPeriod": 1518,
+      "summaryJa": "ToolJet は、内部ツール、ダッシュボード、ビジネス アプリケーション、ワークフロー、AI エージェントを構築するためのエンタープライズ アプリ生成プラットフォームである ToolJet AI のオープンソース基盤です 🚀"
     },
     {
       "rank": 10,
-      "name": "unclebob/swarm-forge",
-      "url": "https://github.com/unclebob/swarm-forge",
-      "description": "A simple tool for coordinating several AI agents.",
-      "language": "Clojure",
-      "stars": 2052,
-      "forks": 218,
-      "starsThisPeriod": 562,
-      "summaryJa": "複数の AI エージェントを調整するためのシンプルなツール。"
+      "name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 87753,
+      "forks": 9404,
+      "starsThisPeriod": 2882,
+      "summaryJa": "AI コーディング エージェントのためのプロダクション グレードのエンジニアリング スキル。"
     }
   ]
 }
