@@ -1,49 +1,49 @@
 {
-  "updatedAt": "2026-08-17T00:43:30.311Z",
+  "updatedAt": "2026-08-24T00:45:01.496Z",
   "period": "weekly",
   "sourceUrl": "https://github.com/trending?since=weekly",
   "count": 10,
   "insights": {
-    "headline": "コーディングエージェント／スキルが 4 件（上位の中心）。横断的な偏りとして見る。",
+    "headline": "コーディングエージェント／スキルが 3 件（上位の中心）。横断的な偏りとして見る。",
     "languages": [
       {
         "name": "Python",
-        "count": 4,
+        "count": 5,
         "repos": [
-          "semantica-agi/semantica",
-          "megadose/holehe",
-          "cactus-compute/needle",
-          "vitali87/code-graph-rag"
-        ]
-      },
-      {
-        "name": "JavaScript",
-        "count": 2,
-        "repos": [
-          "ToolJet/ToolJet",
-          "addyosmani/agent-skills"
-        ]
-      },
-      {
-        "name": "Rust",
-        "count": 2,
-        "repos": [
-          "NVIDIA-NeMo/Switchyard",
-          "macro-inc/macro"
-        ]
-      },
-      {
-        "name": "HTML",
-        "count": 1,
-        "repos": [
-          "cathrynlavery/diagram-design"
+          "harry0703/MoneyPrinterTurbo",
+          "volcengine/OpenViking",
+          "public-apis/public-apis",
+          "jundot/omlx",
+          "anthropics/claude-plugins-community"
         ]
       },
       {
         "name": "TypeScript",
+        "count": 2,
+        "repos": [
+          "cordiverse/cordis",
+          "cursor/plugins"
+        ]
+      },
+      {
+        "name": "Mojo",
         "count": 1,
         "repos": [
-          "PrimeIntellect-ai/prime-agent"
+          "modular/modular"
+        ]
+      },
+      {
+        "name": "Rust",
+        "count": 1,
+        "repos": [
+          "AprilNEA/OpenLogi"
+        ]
+      },
+      {
+        "name": "Shell",
+        "count": 1,
+        "repos": [
+          "basecamp/omarchy"
         ]
       }
     ],
@@ -51,131 +51,138 @@
       {
         "id": "agent-skills",
         "label": "コーディングエージェント／スキル",
-        "count": 4,
+        "count": 3,
         "repos": [
-          "cathrynlavery/diagram-design",
-          "PrimeIntellect-ai/prime-agent",
-          "NVIDIA-NeMo/Switchyard",
-          "addyosmani/agent-skills"
+          "volcengine/OpenViking",
+          "jundot/omlx",
+          "anthropics/claude-plugins-community"
+        ]
+      },
+      {
+        "id": "local-ai",
+        "label": "ローカル／自前ホストAI",
+        "count": 1,
+        "repos": [
+          "AprilNEA/OpenLogi"
         ]
       }
     ],
     "momentum": {
-      "max": 15600,
-      "median": 2882
+      "max": 11167,
+      "median": 3660
     }
   },
-  "trendComment": "コーディングエージェント／スキルが 4 件（上位の中心）。横断的な偏りとして見る。\n言語: Python(4)、JavaScript(2)、Rust(2)\nテーマ: コーディングエージェント／スキル(4)\n週間スター増分 最大 +15,600、中央値 +2,882",
+  "trendComment": "コーディングエージェント／スキルが 3 件（上位の中心）。横断的な偏りとして見る。\n言語: Python(5)、TypeScript(2)、Mojo(1)\nテーマ: コーディングエージェント／スキル(3)、ローカル／自前ホストAI(1)\n週間スター増分 最大 +11,167、中央値 +3,660",
   "repos": [
     {
       "rank": 1,
-      "name": "cathrynlavery/diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
-      "language": "HTML",
-      "stars": 19514,
-      "forks": 1199,
-      "starsThisPeriod": 15600,
-      "summaryJa": "Claude Code の 29 種類の編集図。自己完結型の HTML + SVG。影もなければ、マーメイドスロップもありません。"
+      "name": "modular/modular",
+      "url": "https://github.com/modular/modular",
+      "description": "The Modular Platform (includes MAX & Mojo)",
+      "language": "Mojo",
+      "stars": 28971,
+      "forks": 3076,
+      "starsThisPeriod": 2176,
+      "summaryJa": ""
     },
     {
       "rank": 2,
-      "name": "semantica-agi/semantica",
-      "url": "https://github.com/semantica-agi/semantica",
-      "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
+      "name": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
       "language": "Python",
-      "stars": 8183,
-      "forks": 838,
-      "starsThisPeriod": 5284,
-      "summaryJa": "コンテキストおよび説明責任のある AI システムのためのグラフネイティブ インフラストラクチャ"
+      "stars": 115292,
+      "forks": 17515,
+      "starsThisPeriod": 11167,
+      "summaryJa": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow."
     },
     {
       "rank": 3,
-      "name": "PrimeIntellect-ai/prime-agent",
-      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
-      "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
-      "language": "TypeScript",
-      "stars": 16570,
-      "forks": 1785,
-      "starsThisPeriod": 6435,
-      "summaryJa": "ワークフローや長時間実行される自律タスクをコーディングするための自己改善型 RLM エージェント。"
+      "name": "basecamp/omarchy",
+      "url": "https://github.com/basecamp/omarchy",
+      "description": "Beautiful, Modern & Opinionated Linux",
+      "language": "Shell",
+      "stars": 29128,
+      "forks": 2960,
+      "starsThisPeriod": 3660,
+      "summaryJa": ""
     },
     {
       "rank": 4,
-      "name": "NVIDIA-NeMo/Switchyard",
-      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
-      "description": "Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization.",
+      "name": "AprilNEA/OpenLogi",
+      "url": "https://github.com/AprilNEA/OpenLogi",
+      "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
       "language": "Rust",
-      "stars": 1685,
-      "forks": 153,
-      "starsThisPeriod": 1435,
-      "summaryJa": "Switchyard を使用すると、LLM アプリケーションはネイティブの OpenAI と Anthropic API の互換性を維持しながら、モデルやプロバイダー間でトラフィックをルーティングできるため、柔軟なモデル選択、ベンチマーク…"
+      "stars": 14936,
+      "forks": 399,
+      "starsThisPeriod": 6078,
+      "summaryJa": ""
     },
     {
       "rank": 5,
-      "name": "megadose/holehe",
-      "url": "https://github.com/megadose/holehe",
-      "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
-      "language": "Python",
-      "stars": 13291,
-      "forks": 1756,
-      "starsThisPeriod": 1287,
-      "summaryJa": "Holehe を使用すると、メールが twitter や instagram などの別のサイトで使用されているかどうかを確認したり、パスワードを忘れた場合はサイトの情報を取得したりできます。"
+      "name": "cordiverse/cordis",
+      "url": "https://github.com/cordiverse/cordis",
+      "description": "Meta-Framework of Spatiotemporal Composability",
+      "language": "TypeScript",
+      "stars": 7236,
+      "forks": 419,
+      "starsThisPeriod": 2725,
+      "summaryJa": ""
     },
     {
       "rank": 6,
-      "name": "cactus-compute/needle",
-      "url": "https://github.com/cactus-compute/needle",
-      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
+      "name": "volcengine/OpenViking",
+      "url": "https://github.com/volcengine/OpenViking",
+      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
       "language": "Python",
-      "stars": 6563,
-      "forks": 433,
-      "starsThisPeriod": 2950,
-      "summaryJa": "小型デバイス向けの 14MB 基本モデル。電話、ウェアラブル、スマートホーム、ロボットなど。"
+      "stars": 32483,
+      "forks": 2482,
+      "starsThisPeriod": 3799,
+      "summaryJa": ""
     },
     {
       "rank": 7,
-      "name": "macro-inc/macro",
-      "url": "https://github.com/macro-inc/macro",
-      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
-      "language": "Rust",
-      "stars": 3407,
-      "forks": 338,
-      "starsThisPeriod": 2588,
-      "summaryJa": "マクロは、電子メール、チャット、ドキュメント、タスク、エージェント、通話、CRM などのチーム向けの統合ワークスペースであり、共有 AI メモリとともに @ リンクされています。"
+      "name": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "language": "Python",
+      "stars": 469209,
+      "forks": 51756,
+      "starsThisPeriod": 8295,
+      "summaryJa": ""
     },
     {
       "rank": 8,
-      "name": "vitali87/code-graph-rag",
-      "url": "https://github.com/vitali87/code-graph-rag",
-      "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+      "name": "jundot/omlx",
+      "url": "https://github.com/jundot/omlx",
+      "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
       "language": "Python",
-      "stars": 4429,
-      "forks": 598,
-      "starsThisPeriod": 1686,
-      "summaryJa": "モノリポジトリ用の究極の RAG。 AI とナレッジ グラフの力を利用して、多言語コードベースをクエリ、理解、編集します"
+      "stars": 20448,
+      "forks": 1731,
+      "starsThisPeriod": 1671,
+      "summaryJa": ""
     },
     {
       "rank": 9,
-      "name": "ToolJet/ToolJet",
-      "url": "https://github.com/ToolJet/ToolJet",
-      "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
-      "language": "JavaScript",
-      "stars": 40025,
-      "forks": 5330,
-      "starsThisPeriod": 1518,
-      "summaryJa": "ToolJet は、内部ツール、ダッシュボード、ビジネス アプリケーション、ワークフロー、AI エージェントを構築するためのエンタープライズ アプリ生成プラットフォームである ToolJet AI のオープンソース基盤です 🚀"
+      "name": "anthropics/claude-plugins-community",
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+      "language": "Python",
+      "stars": 942,
+      "forks": 126,
+      "starsThisPeriod": 406,
+      "summaryJa": ""
     },
     {
       "rank": 10,
-      "name": "addyosmani/agent-skills",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "language": "JavaScript",
-      "stars": 87753,
-      "forks": 9404,
-      "starsThisPeriod": 2882,
-      "summaryJa": "AI コーディング エージェントのためのプロダクション グレードのエンジニアリング スキル。"
+      "name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars": 4822,
+      "forks": 396,
+      "starsThisPeriod": 1761,
+      "summaryJa": ""
     }
   ]
 }
