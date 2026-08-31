@@ -1,35 +1,35 @@
 {
-  "updatedAt": "2026-08-24T00:45:01.496Z",
+  "updatedAt": "2026-08-31T02:32:32.696Z",
   "period": "weekly",
   "sourceUrl": "https://github.com/trending?since=weekly",
   "count": 10,
   "insights": {
-    "headline": "コーディングエージェント／スキルが 3 件（上位の中心）。横断的な偏りとして見る。",
+    "headline": "コーディングエージェント／スキルが 6 件（上位の中心）。横断的な偏りとして見る。",
     "languages": [
       {
         "name": "Python",
-        "count": 5,
+        "count": 4,
         "repos": [
-          "harry0703/MoneyPrinterTurbo",
-          "volcengine/OpenViking",
-          "public-apis/public-apis",
-          "jundot/omlx",
-          "anthropics/claude-plugins-community"
+          "anthropics/claude-plugins-community",
+          "MadsLorentzen/ai-job-search",
+          "anthropics/claude-plugins-official",
+          "rohitg00/ai-engineering-from-scratch"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "count": 2,
+        "repos": [
+          "freestylefly/awesome-gpt-image-2",
+          "tt-a1i/archify"
         ]
       },
       {
         "name": "TypeScript",
         "count": 2,
         "repos": [
-          "cordiverse/cordis",
-          "cursor/plugins"
-        ]
-      },
-      {
-        "name": "Mojo",
-        "count": 1,
-        "repos": [
-          "modular/modular"
+          "apache/maka",
+          "tashfeenahmed/freellmapi"
         ]
       },
       {
@@ -43,7 +43,7 @@
         "name": "Shell",
         "count": 1,
         "repos": [
-          "basecamp/omarchy"
+          "omacom/omarchy"
         ]
       }
     ],
@@ -51,137 +51,149 @@
       {
         "id": "agent-skills",
         "label": "コーディングエージェント／スキル",
-        "count": 3,
+        "count": 6,
         "repos": [
-          "volcengine/OpenViking",
-          "jundot/omlx",
-          "anthropics/claude-plugins-community"
+          "anthropics/claude-plugins-community",
+          "tt-a1i/archify",
+          "apache/maka",
+          "tashfeenahmed/freellmapi",
+          "MadsLorentzen/ai-job-search",
+          "anthropics/claude-plugins-official"
         ]
       },
       {
         "id": "local-ai",
         "label": "ローカル／自前ホストAI",
+        "count": 2,
+        "repos": [
+          "apache/maka",
+          "AprilNEA/OpenLogi"
+        ]
+      },
+      {
+        "id": "learning",
+        "label": "学習・チュートリアル",
         "count": 1,
         "repos": [
-          "AprilNEA/OpenLogi"
+          "rohitg00/ai-engineering-from-scratch"
         ]
       }
     ],
     "momentum": {
-      "max": 11167,
-      "median": 3660
+      "max": 18103,
+      "median": 3720
     }
   },
-  "trendComment": "コーディングエージェント／スキルが 3 件（上位の中心）。横断的な偏りとして見る。\n言語: Python(5)、TypeScript(2)、Mojo(1)\nテーマ: コーディングエージェント／スキル(3)、ローカル／自前ホストAI(1)\n週間スター増分 最大 +11,167、中央値 +3,660",
+  "trendComment": "コーディングエージェント／スキルが 6 件（上位の中心）。横断的な偏りとして見る。\n言語: Python(4)、JavaScript(2)、TypeScript(2)\nテーマ: コーディングエージェント／スキル(6)、ローカル／自前ホストAI(2)、学習・チュートリアル(1)\n週間スター増分 最大 +18,103、中央値 +3,720",
   "repos": [
     {
       "rank": 1,
-      "name": "modular/modular",
-      "url": "https://github.com/modular/modular",
-      "description": "The Modular Platform (includes MAX & Mojo)",
-      "language": "Mojo",
-      "stars": 28971,
-      "forks": 3076,
-      "starsThisPeriod": 2176,
-      "summaryJa": ""
+      "name": "freestylefly/awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+      "language": "JavaScript",
+      "stars": 25755,
+      "forks": 2529,
+      "starsThisPeriod": 13413,
+      "summaryJa": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中"
     },
     {
       "rank": 2,
-      "name": "harry0703/MoneyPrinterTurbo",
-      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
-      "language": "Python",
-      "stars": 115292,
-      "forks": 17515,
-      "starsThisPeriod": 11167,
-      "summaryJa": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow."
-    },
-    {
-      "rank": 3,
-      "name": "basecamp/omarchy",
-      "url": "https://github.com/basecamp/omarchy",
-      "description": "Beautiful, Modern & Opinionated Linux",
-      "language": "Shell",
-      "stars": 29128,
-      "forks": 2960,
-      "starsThisPeriod": 3660,
-      "summaryJa": ""
-    },
-    {
-      "rank": 4,
-      "name": "AprilNEA/OpenLogi",
-      "url": "https://github.com/AprilNEA/OpenLogi",
-      "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
-      "language": "Rust",
-      "stars": 14936,
-      "forks": 399,
-      "starsThisPeriod": 6078,
-      "summaryJa": ""
-    },
-    {
-      "rank": 5,
-      "name": "cordiverse/cordis",
-      "url": "https://github.com/cordiverse/cordis",
-      "description": "Meta-Framework of Spatiotemporal Composability",
-      "language": "TypeScript",
-      "stars": 7236,
-      "forks": 419,
-      "starsThisPeriod": 2725,
-      "summaryJa": ""
-    },
-    {
-      "rank": 6,
-      "name": "volcengine/OpenViking",
-      "url": "https://github.com/volcengine/OpenViking",
-      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
-      "language": "Python",
-      "stars": 32483,
-      "forks": 2482,
-      "starsThisPeriod": 3799,
-      "summaryJa": ""
-    },
-    {
-      "rank": 7,
-      "name": "public-apis/public-apis",
-      "url": "https://github.com/public-apis/public-apis",
-      "description": "A collective list of free APIs",
-      "language": "Python",
-      "stars": 469209,
-      "forks": 51756,
-      "starsThisPeriod": 8295,
-      "summaryJa": ""
-    },
-    {
-      "rank": 8,
-      "name": "jundot/omlx",
-      "url": "https://github.com/jundot/omlx",
-      "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
-      "language": "Python",
-      "stars": 20448,
-      "forks": 1731,
-      "starsThisPeriod": 1671,
-      "summaryJa": ""
-    },
-    {
-      "rank": 9,
       "name": "anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
       "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
       "language": "Python",
-      "stars": 942,
-      "forks": 126,
-      "starsThisPeriod": 406,
+      "stars": 2892,
+      "forks": 237,
+      "starsThisPeriod": 2162,
+      "summaryJa": ""
+    },
+    {
+      "rank": 3,
+      "name": "tt-a1i/archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "language": "JavaScript",
+      "stars": 35023,
+      "forks": 2235,
+      "starsThisPeriod": 18103,
+      "summaryJa": ""
+    },
+    {
+      "rank": 4,
+      "name": "omacom/omarchy",
+      "url": "https://github.com/omacom/omarchy",
+      "description": "Beautiful, Modern & Opinionated Linux",
+      "language": "Shell",
+      "stars": 35594,
+      "forks": 3670,
+      "starsThisPeriod": 6692,
+      "summaryJa": ""
+    },
+    {
+      "rank": 5,
+      "name": "apache/maka",
+      "url": "https://github.com/apache/maka",
+      "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
+      "language": "TypeScript",
+      "stars": 4212,
+      "forks": 389,
+      "starsThisPeriod": 1973,
+      "summaryJa": ""
+    },
+    {
+      "rank": 6,
+      "name": "tashfeenahmed/freellmapi",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+      "language": "TypeScript",
+      "stars": 22858,
+      "forks": 3155,
+      "starsThisPeriod": 3037,
+      "summaryJa": ""
+    },
+    {
+      "rank": 7,
+      "name": "MadsLorentzen/ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "language": "Python",
+      "stars": 38565,
+      "forks": 13091,
+      "starsThisPeriod": 5348,
+      "summaryJa": ""
+    },
+    {
+      "rank": 8,
+      "name": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 35624,
+      "forks": 3973,
+      "starsThisPeriod": 1940,
+      "summaryJa": ""
+    },
+    {
+      "rank": 9,
+      "name": "AprilNEA/OpenLogi",
+      "url": "https://github.com/AprilNEA/OpenLogi",
+      "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
+      "language": "Rust",
+      "stars": 17917,
+      "forks": 522,
+      "starsThisPeriod": 3406,
       "summaryJa": ""
     },
     {
       "rank": 10,
-      "name": "cursor/plugins",
-      "url": "https://github.com/cursor/plugins",
-      "description": "Cursor plugin specification and official plugins",
-      "language": "TypeScript",
-      "stars": 4822,
-      "forks": 396,
-      "starsThisPeriod": 1761,
+      "name": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "stars": 51315,
+      "forks": 8886,
+      "starsThisPeriod": 3720,
       "summaryJa": ""
     }
   ]
