@@ -1,49 +1,43 @@
 {
-  "updatedAt": "2026-08-31T02:32:32.696Z",
+  "updatedAt": "2026-09-07T02:02:23.409Z",
   "period": "weekly",
   "sourceUrl": "https://github.com/trending?since=weekly",
   "count": 10,
   "insights": {
-    "headline": "コーディングエージェント／スキルが 6 件（上位の中心）。横断的な偏りとして見る。",
+    "headline": "コーディングエージェント／スキルが 5 件（上位の中心）。横断的な偏りとして見る。",
     "languages": [
       {
         "name": "Python",
-        "count": 4,
+        "count": 5,
         "repos": [
-          "anthropics/claude-plugins-community",
-          "MadsLorentzen/ai-job-search",
-          "anthropics/claude-plugins-official",
-          "rohitg00/ai-engineering-from-scratch"
-        ]
-      },
-      {
-        "name": "JavaScript",
-        "count": 2,
-        "repos": [
-          "freestylefly/awesome-gpt-image-2",
-          "tt-a1i/archify"
+          "pollen-robotics/microduck_rl",
+          "google-research/timesfm",
+          "jingyaogong/minimind",
+          "debpalash/VoiceStudio",
+          "handsomestWei/patent-disclosure-skill"
         ]
       },
       {
         "name": "TypeScript",
-        "count": 2,
+        "count": 3,
         "repos": [
-          "apache/maka",
-          "tashfeenahmed/freellmapi"
+          "magnitudedev/magnitude",
+          "THU-MAIC/OpenMAIC",
+          "Gitlawb/openclaude"
         ]
       },
       {
-        "name": "Rust",
+        "name": "C++",
         "count": 1,
         "repos": [
-          "AprilNEA/OpenLogi"
+          "fmtlib/fmt"
         ]
       },
       {
-        "name": "Shell",
+        "name": "JavaScript",
         "count": 1,
         "repos": [
-          "omacom/omarchy"
+          "tt-a1i/archify"
         ]
       }
     ],
@@ -51,14 +45,13 @@
       {
         "id": "agent-skills",
         "label": "コーディングエージェント／スキル",
-        "count": 6,
+        "count": 5,
         "repos": [
-          "anthropics/claude-plugins-community",
           "tt-a1i/archify",
-          "apache/maka",
-          "tashfeenahmed/freellmapi",
-          "MadsLorentzen/ai-job-search",
-          "anthropics/claude-plugins-official"
+          "magnitudedev/magnitude",
+          "THU-MAIC/OpenMAIC",
+          "jingyaogong/minimind",
+          "handsomestWei/patent-disclosure-skill"
         ]
       },
       {
@@ -66,8 +59,8 @@
         "label": "ローカル／自前ホストAI",
         "count": 2,
         "repos": [
-          "apache/maka",
-          "AprilNEA/OpenLogi"
+          "magnitudedev/magnitude",
+          "debpalash/VoiceStudio"
         ]
       },
       {
@@ -75,126 +68,126 @@
         "label": "学習・チュートリアル",
         "count": 1,
         "repos": [
-          "rohitg00/ai-engineering-from-scratch"
+          "THU-MAIC/OpenMAIC"
         ]
       }
     ],
     "momentum": {
-      "max": 18103,
-      "median": 3720
+      "max": 17190,
+      "median": 3203
     }
   },
-  "trendComment": "コーディングエージェント／スキルが 6 件（上位の中心）。横断的な偏りとして見る。\n言語: Python(4)、JavaScript(2)、TypeScript(2)\nテーマ: コーディングエージェント／スキル(6)、ローカル／自前ホストAI(2)、学習・チュートリアル(1)\n週間スター増分 最大 +18,103、中央値 +3,720",
+  "trendComment": "コーディングエージェント／スキルが 5 件（上位の中心）。横断的な偏りとして見る。\n言語: Python(5)、TypeScript(3)、C++(1)\nテーマ: コーディングエージェント／スキル(5)、ローカル／自前ホストAI(2)、学習・チュートリアル(1)\n週間スター増分 最大 +17,190、中央値 +3,203",
   "repos": [
     {
       "rank": 1,
-      "name": "freestylefly/awesome-gpt-image-2",
-      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
-      "language": "JavaScript",
-      "stars": 25755,
-      "forks": 2529,
-      "starsThisPeriod": 13413,
-      "summaryJa": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中"
-    },
-    {
-      "rank": 2,
-      "name": "anthropics/claude-plugins-community",
-      "url": "https://github.com/anthropics/claude-plugins-community",
-      "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
-      "language": "Python",
-      "stars": 2892,
-      "forks": 237,
-      "starsThisPeriod": 2162,
-      "summaryJa": ""
-    },
-    {
-      "rank": 3,
       "name": "tt-a1i/archify",
       "url": "https://github.com/tt-a1i/archify",
       "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
       "language": "JavaScript",
-      "stars": 35023,
-      "forks": 2235,
-      "starsThisPeriod": 18103,
+      "stars": 50923,
+      "forks": 3319,
+      "starsThisPeriod": 17190,
+      "summaryJa": ""
+    },
+    {
+      "rank": 2,
+      "name": "magnitudedev/magnitude",
+      "url": "https://github.com/magnitudedev/magnitude",
+      "description": "Open source inference server that runs the best local models for your hardware, plugged into the agent you already use. Works with Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, and Cline.",
+      "language": "TypeScript",
+      "stars": 3701,
+      "forks": 261,
+      "starsThisPeriod": 1961,
+      "summaryJa": ""
+    },
+    {
+      "rank": 3,
+      "name": "THU-MAIC/OpenMAIC",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
+      "language": "TypeScript",
+      "stars": 32450,
+      "forks": 5302,
+      "starsThisPeriod": 9193,
       "summaryJa": ""
     },
     {
       "rank": 4,
-      "name": "omacom/omarchy",
-      "url": "https://github.com/omacom/omarchy",
-      "description": "Beautiful, Modern & Opinionated Linux",
-      "language": "Shell",
-      "stars": 35594,
-      "forks": 3670,
-      "starsThisPeriod": 6692,
+      "name": "Gitlawb/openclaude",
+      "url": "https://github.com/Gitlawb/openclaude",
+      "description": "runs anywhere. uses anything",
+      "language": "TypeScript",
+      "stars": 32849,
+      "forks": 9059,
+      "starsThisPeriod": 1944,
       "summaryJa": ""
     },
     {
       "rank": 5,
-      "name": "apache/maka",
-      "url": "https://github.com/apache/maka",
-      "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
-      "language": "TypeScript",
-      "stars": 4212,
-      "forks": 389,
-      "starsThisPeriod": 1973,
+      "name": "pollen-robotics/microduck_rl",
+      "url": "https://github.com/pollen-robotics/microduck_rl",
+      "description": "RL training environments for Microduck (mjlab)",
+      "language": "Python",
+      "stars": 1826,
+      "forks": 364,
+      "starsThisPeriod": 1122,
       "summaryJa": ""
     },
     {
       "rank": 6,
-      "name": "tashfeenahmed/freellmapi",
-      "url": "https://github.com/tashfeenahmed/freellmapi",
-      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
-      "language": "TypeScript",
-      "stars": 22858,
-      "forks": 3155,
-      "starsThisPeriod": 3037,
+      "name": "google-research/timesfm",
+      "url": "https://github.com/google-research/timesfm",
+      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+      "language": "Python",
+      "stars": 31657,
+      "forks": 3029,
+      "starsThisPeriod": 3203,
       "summaryJa": ""
     },
     {
       "rank": 7,
-      "name": "MadsLorentzen/ai-job-search",
-      "url": "https://github.com/MadsLorentzen/ai-job-search",
-      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "name": "jingyaogong/minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
       "language": "Python",
-      "stars": 38565,
-      "forks": 13091,
-      "starsThisPeriod": 5348,
+      "stars": 59172,
+      "forks": 7682,
+      "starsThisPeriod": 3816,
       "summaryJa": ""
     },
     {
       "rank": 8,
-      "name": "anthropics/claude-plugins-official",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "language": "Python",
-      "stars": 35624,
-      "forks": 3973,
-      "starsThisPeriod": 1940,
+      "name": "fmtlib/fmt",
+      "url": "https://github.com/fmtlib/fmt",
+      "description": "A modern formatting library",
+      "language": "C++",
+      "stars": 25625,
+      "forks": 3045,
+      "starsThisPeriod": 1885,
       "summaryJa": ""
     },
     {
       "rank": 9,
-      "name": "AprilNEA/OpenLogi",
-      "url": "https://github.com/AprilNEA/OpenLogi",
-      "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
-      "language": "Rust",
-      "stars": 17917,
-      "forks": 522,
-      "starsThisPeriod": 3406,
+      "name": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 19894,
+      "forks": 2516,
+      "starsThisPeriod": 7513,
       "summaryJa": ""
     },
     {
       "rank": 10,
-      "name": "rohitg00/ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
+      "name": "handsomestWei/patent-disclosure-skill",
+      "url": "https://github.com/handsomestWei/patent-disclosure-skill",
+      "description": "中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。",
       "language": "Python",
-      "stars": 51315,
-      "forks": 8886,
-      "starsThisPeriod": 3720,
-      "summaryJa": ""
+      "stars": 7871,
+      "forks": 847,
+      "starsThisPeriod": 2093,
+      "summaryJa": "中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。"
     }
   ]
 }
