@@ -1,43 +1,37 @@
 {
-  "updatedAt": "2026-09-07T02:02:23.409Z",
+  "updatedAt": "2026-09-14T02:33:23.472Z",
   "period": "weekly",
   "sourceUrl": "https://github.com/trending?since=weekly",
   "count": 10,
   "insights": {
-    "headline": "コーディングエージェント／スキルが 5 件（上位の中心）。横断的な偏りとして見る。",
+    "headline": "コーディングエージェント／スキルが 4 件（上位の中心）。横断的な偏りとして見る。",
     "languages": [
       {
-        "name": "Python",
+        "name": "JavaScript",
         "count": 5,
         "repos": [
-          "pollen-robotics/microduck_rl",
-          "google-research/timesfm",
-          "jingyaogong/minimind",
-          "debpalash/VoiceStudio",
-          "handsomestWei/patent-disclosure-skill"
+          "affaan-m/ECC",
+          "openai/plugins",
+          "bilawalsidhu/gods-eye-view",
+          "DietrichGebert/ponytail",
+          "tt-a1i/archify"
+        ]
+      },
+      {
+        "name": "Python",
+        "count": 3,
+        "repos": [
+          "ayghri/i-have-adhd",
+          "openai/skills",
+          "microsoft/markitdown"
         ]
       },
       {
         "name": "TypeScript",
-        "count": 3,
+        "count": 2,
         "repos": [
-          "magnitudedev/magnitude",
-          "THU-MAIC/OpenMAIC",
-          "Gitlawb/openclaude"
-        ]
-      },
-      {
-        "name": "C++",
-        "count": 1,
-        "repos": [
-          "fmtlib/fmt"
-        ]
-      },
-      {
-        "name": "JavaScript",
-        "count": 1,
-        "repos": [
-          "tt-a1i/archify"
+          "mksglu/context-mode",
+          "heygen-com/hyperframes"
         ]
       }
     ],
@@ -45,149 +39,139 @@
       {
         "id": "agent-skills",
         "label": "コーディングエージェント／スキル",
-        "count": 5,
+        "count": 4,
         "repos": [
-          "tt-a1i/archify",
-          "magnitudedev/magnitude",
-          "THU-MAIC/OpenMAIC",
-          "jingyaogong/minimind",
-          "handsomestWei/patent-disclosure-skill"
+          "ayghri/i-have-adhd",
+          "affaan-m/ECC",
+          "DietrichGebert/ponytail",
+          "tt-a1i/archify"
         ]
       },
       {
-        "id": "local-ai",
-        "label": "ローカル／自前ホストAI",
-        "count": 2,
-        "repos": [
-          "magnitudedev/magnitude",
-          "debpalash/VoiceStudio"
-        ]
-      },
-      {
-        "id": "learning",
-        "label": "学習・チュートリアル",
+        "id": "security",
+        "label": "セキュリティ／リバース",
         "count": 1,
         "repos": [
-          "THU-MAIC/OpenMAIC"
+          "affaan-m/ECC"
         ]
       }
     ],
     "momentum": {
-      "max": 17190,
-      "median": 3203
+      "max": 16740,
+      "median": 7264
     }
   },
-  "trendComment": "コーディングエージェント／スキルが 5 件（上位の中心）。横断的な偏りとして見る。\n言語: Python(5)、TypeScript(3)、C++(1)\nテーマ: コーディングエージェント／スキル(5)、ローカル／自前ホストAI(2)、学習・チュートリアル(1)\n週間スター増分 最大 +17,190、中央値 +3,203",
+  "trendComment": "コーディングエージェント／スキルが 4 件（上位の中心）。横断的な偏りとして見る。\n言語: JavaScript(5)、Python(3)、TypeScript(2)\nテーマ: コーディングエージェント／スキル(4)、セキュリティ／リバース(1)\n週間スター増分 最大 +16,740、中央値 +7,264",
   "repos": [
     {
       "rank": 1,
-      "name": "tt-a1i/archify",
-      "url": "https://github.com/tt-a1i/archify",
-      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
-      "language": "JavaScript",
-      "stars": 50923,
-      "forks": 3319,
-      "starsThisPeriod": 17190,
+      "name": "ayghri/i-have-adhd",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "language": "Python",
+      "stars": 44422,
+      "forks": 2554,
+      "starsThisPeriod": 16740,
       "summaryJa": ""
     },
     {
       "rank": 2,
-      "name": "magnitudedev/magnitude",
-      "url": "https://github.com/magnitudedev/magnitude",
-      "description": "Open source inference server that runs the best local models for your hardware, plugged into the agent you already use. Works with Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, and Cline.",
-      "language": "TypeScript",
-      "stars": 3701,
-      "forks": 261,
-      "starsThisPeriod": 1961,
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 257792,
+      "forks": 38554,
+      "starsThisPeriod": 7264,
       "summaryJa": ""
     },
     {
       "rank": 3,
-      "name": "THU-MAIC/OpenMAIC",
-      "url": "https://github.com/THU-MAIC/OpenMAIC",
-      "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
-      "language": "TypeScript",
-      "stars": 32450,
-      "forks": 5302,
-      "starsThisPeriod": 9193,
+      "name": "openai/plugins",
+      "url": "https://github.com/openai/plugins",
+      "description": "OpenAI Plugins",
+      "language": "JavaScript",
+      "stars": 6625,
+      "forks": 872,
+      "starsThisPeriod": 1181,
       "summaryJa": ""
     },
     {
       "rank": 4,
-      "name": "Gitlawb/openclaude",
-      "url": "https://github.com/Gitlawb/openclaude",
-      "description": "runs anywhere. uses anything",
-      "language": "TypeScript",
-      "stars": 32849,
-      "forks": 9059,
-      "starsThisPeriod": 1944,
+      "name": "bilawalsidhu/gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "language": "JavaScript",
+      "stars": 32037,
+      "forks": 6429,
+      "starsThisPeriod": 12931,
       "summaryJa": ""
     },
     {
       "rank": 5,
-      "name": "pollen-robotics/microduck_rl",
-      "url": "https://github.com/pollen-robotics/microduck_rl",
-      "description": "RL training environments for Microduck (mjlab)",
-      "language": "Python",
-      "stars": 1826,
-      "forks": 364,
-      "starsThisPeriod": 1122,
+      "name": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars": 22652,
+      "forks": 1632,
+      "starsThisPeriod": 2102,
       "summaryJa": ""
     },
     {
       "rank": 6,
-      "name": "google-research/timesfm",
-      "url": "https://github.com/google-research/timesfm",
-      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
-      "language": "Python",
-      "stars": 31657,
-      "forks": 3029,
-      "starsThisPeriod": 3203,
+      "name": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "stars": 137419,
+      "forks": 7381,
+      "starsThisPeriod": 8444,
       "summaryJa": ""
     },
     {
       "rank": 7,
-      "name": "jingyaogong/minimind",
-      "url": "https://github.com/jingyaogong/minimind",
-      "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
-      "language": "Python",
-      "stars": 59172,
-      "forks": 7682,
-      "starsThisPeriod": 3816,
+      "name": "tt-a1i/archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "language": "JavaScript",
+      "stars": 60908,
+      "forks": 4002,
+      "starsThisPeriod": 10132,
       "summaryJa": ""
     },
     {
       "rank": 8,
-      "name": "fmtlib/fmt",
-      "url": "https://github.com/fmtlib/fmt",
-      "description": "A modern formatting library",
-      "language": "C++",
-      "stars": 25625,
-      "forks": 3045,
-      "starsThisPeriod": 1885,
+      "name": "openai/skills",
+      "url": "https://github.com/openai/skills",
+      "description": "Skills Catalog for Codex",
+      "language": "Python",
+      "stars": 27106,
+      "forks": 1809,
+      "starsThisPeriod": 1622,
       "summaryJa": ""
     },
     {
       "rank": 9,
-      "name": "debpalash/VoiceStudio",
-      "url": "https://github.com/debpalash/VoiceStudio",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "language": "Python",
-      "stars": 19894,
-      "forks": 2516,
-      "starsThisPeriod": 7513,
+      "name": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "stars": 49643,
+      "forks": 4534,
+      "starsThisPeriod": 5146,
       "summaryJa": ""
     },
     {
       "rank": 10,
-      "name": "handsomestWei/patent-disclosure-skill",
-      "url": "https://github.com/handsomestWei/patent-disclosure-skill",
-      "description": "中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。",
+      "name": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "description": "Python tool for converting files and office documents to Markdown.",
       "language": "Python",
-      "stars": 7871,
-      "forks": 847,
-      "starsThisPeriod": 2093,
-      "summaryJa": "中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。"
+      "stars": 183631,
+      "forks": 13513,
+      "starsThisPeriod": 5191,
+      "summaryJa": ""
     }
   ]
 }
