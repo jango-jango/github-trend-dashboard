@@ -1,37 +1,49 @@
 {
-  "updatedAt": "2026-09-14T02:33:23.472Z",
+  "updatedAt": "2026-09-21T02:30:56.637Z",
   "period": "weekly",
   "sourceUrl": "https://github.com/trending?since=weekly",
   "count": 10,
   "insights": {
-    "headline": "コーディングエージェント／スキルが 4 件（上位の中心）。横断的な偏りとして見る。",
+    "headline": "コーディングエージェント／スキルが 7 件（上位の中心）。横断的な偏りとして見る。",
     "languages": [
       {
         "name": "JavaScript",
-        "count": 5,
+        "count": 3,
         "repos": [
           "affaan-m/ECC",
-          "openai/plugins",
-          "bilawalsidhu/gods-eye-view",
-          "DietrichGebert/ponytail",
-          "tt-a1i/archify"
+          "addyosmani/agent-skills",
+          "bilawalsidhu/gods-eye-view"
+        ]
+      },
+      {
+        "name": "Go",
+        "count": 2,
+        "repos": [
+          "alibaba/open-code-review",
+          "Tencent/WeKnora"
         ]
       },
       {
         "name": "Python",
-        "count": 3,
+        "count": 2,
         "repos": [
-          "ayghri/i-have-adhd",
-          "openai/skills",
-          "microsoft/markitdown"
+          "anthropics/knowledge-work-plugins",
+          "home-assistant/core"
         ]
       },
       {
         "name": "TypeScript",
         "count": 2,
         "repos": [
-          "mksglu/context-mode",
-          "heygen-com/hyperframes"
+          "anthropics/claude-code",
+          "mksglu/context-mode"
+        ]
+      },
+      {
+        "name": "Rust",
+        "count": 1,
+        "repos": [
+          "max-sixty/worktrunk"
         ]
       }
     ],
@@ -39,12 +51,23 @@
       {
         "id": "agent-skills",
         "label": "コーディングエージェント／スキル",
-        "count": 4,
+        "count": 7,
         "repos": [
-          "ayghri/i-have-adhd",
+          "alibaba/open-code-review",
+          "anthropics/claude-code",
           "affaan-m/ECC",
-          "DietrichGebert/ponytail",
-          "tt-a1i/archify"
+          "Tencent/WeKnora",
+          "addyosmani/agent-skills",
+          "anthropics/knowledge-work-plugins",
+          "max-sixty/worktrunk"
+        ]
+      },
+      {
+        "id": "devtools",
+        "label": "エディタ／開発ツール",
+        "count": 1,
+        "repos": [
+          "max-sixty/worktrunk"
         ]
       },
       {
@@ -54,124 +77,132 @@
         "repos": [
           "affaan-m/ECC"
         ]
+      },
+      {
+        "id": "local-ai",
+        "label": "ローカル／自前ホストAI",
+        "count": 1,
+        "repos": [
+          "home-assistant/core"
+        ]
       }
     ],
     "momentum": {
-      "max": 16740,
-      "median": 7264
+      "max": 15504,
+      "median": 3986
     }
   },
-  "trendComment": "コーディングエージェント／スキルが 4 件（上位の中心）。横断的な偏りとして見る。\n言語: JavaScript(5)、Python(3)、TypeScript(2)\nテーマ: コーディングエージェント／スキル(4)、セキュリティ／リバース(1)\n週間スター増分 最大 +16,740、中央値 +7,264",
+  "trendComment": "コーディングエージェント／スキルが 7 件（上位の中心）。横断的な偏りとして見る。\n言語: JavaScript(3)、Go(2)、Python(2)\nテーマ: コーディングエージェント／スキル(7)、エディタ／開発ツール(1)、セキュリティ／リバース(1)\n週間スター増分 最大 +15,504、中央値 +3,986",
   "repos": [
     {
       "rank": 1,
-      "name": "ayghri/i-have-adhd",
-      "url": "https://github.com/ayghri/i-have-adhd",
-      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-      "language": "Python",
-      "stars": 44422,
-      "forks": 2554,
-      "starsThisPeriod": 16740,
-      "summaryJa": ""
+      "name": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 38470,
+      "forks": 2741,
+      "starsThisPeriod": 15504,
+      "summaryJa": "安全、高速、効率的で、アリババの規模で実証済みです。ハイブリッド アーキテクチャ コード レビュー ツール: 決定論的パイプライン + LLM エージェント、正確な行レベルのコメント、組み込みの多言語ルールセット (NPE、スレッド セー…"
     },
     {
       "rank": 2,
+      "name": "anthropics/claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "language": "TypeScript",
+      "stars": 147171,
+      "forks": 24072,
+      "starsThisPeriod": 2342,
+      "summaryJa": "Claude Code は、端末内に常駐するエージェント コーディング ツールで、コードベースを理解し、日常的なタスクの実行、複雑なコードの説明、git ワークフローの処理をすべて自然言語コマンドを通じて行うことで、コーディングの高速化を…"
+    },
+    {
+      "rank": 3,
       "name": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
-      "stars": 257792,
-      "forks": 38554,
-      "starsThisPeriod": 7264,
-      "summaryJa": ""
-    },
-    {
-      "rank": 3,
-      "name": "openai/plugins",
-      "url": "https://github.com/openai/plugins",
-      "description": "OpenAI Plugins",
-      "language": "JavaScript",
-      "stars": 6625,
-      "forks": 872,
-      "starsThisPeriod": 1181,
-      "summaryJa": ""
+      "stars": 263826,
+      "forks": 39469,
+      "starsThisPeriod": 6453,
+      "summaryJa": "エージェントハーネスパフォーマンス最適化システム。クロード コード、コーデックス、オープンコード、カーソルなどのスキル、本能、記憶力、セキュリティ、研究優先の開発。"
     },
     {
       "rank": 4,
+      "name": "Tencent/WeKnora",
+      "url": "https://github.com/Tencent/WeKnora",
+      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+      "language": "Go",
+      "stars": 28080,
+      "forks": 3775,
+      "starsThisPeriod": 5242,
+      "summaryJa": "オープンソース LLM ナレッジ プラットフォーム: 生のドキュメントをクエリ可能な RAG、自律推論エージェント、自己保守型 Wiki に変換します。"
+    },
+    {
+      "rank": 5,
+      "name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 97739,
+      "forks": 10297,
+      "starsThisPeriod": 3986,
+      "summaryJa": "AI コーディング エージェントのためのプロダクション グレードのエンジニアリング スキル。"
+    },
+    {
+      "rank": 6,
+      "name": "anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 25289,
+      "forks": 3007,
+      "starsThisPeriod": 1298,
+      "summaryJa": "主に知識労働者が Claude Cowork で使用することを目的としたプラグインのオープンソース リポジトリ"
+    },
+    {
+      "rank": 7,
       "name": "bilawalsidhu/gods-eye-view",
       "url": "https://github.com/bilawalsidhu/gods-eye-view",
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
       "language": "JavaScript",
-      "stars": 32037,
-      "forks": 6429,
-      "starsThisPeriod": 12931,
-      "summaryJa": ""
+      "stars": 39696,
+      "forks": 8033,
+      "starsThisPeriod": 8111,
+      "summaryJa": "ブラウザ上のスパイ衛星シミュレーターですが、データは本物です。フォトリアリスティックな 3D 地球儀上にオープンソースの空間インテリジェンスをライブで表示します。"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "name": "mksglu/context-mode",
       "url": "https://github.com/mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "language": "TypeScript",
-      "stars": 22652,
-      "forks": 1632,
-      "starsThisPeriod": 2102,
-      "summaryJa": ""
-    },
-    {
-      "rank": 6,
-      "name": "DietrichGebert/ponytail",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "language": "JavaScript",
-      "stars": 137419,
-      "forks": 7381,
-      "starsThisPeriod": 8444,
-      "summaryJa": ""
-    },
-    {
-      "rank": 7,
-      "name": "tt-a1i/archify",
-      "url": "https://github.com/tt-a1i/archify",
-      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
-      "language": "JavaScript",
-      "stars": 60908,
-      "forks": 4002,
-      "starsThisPeriod": 10132,
-      "summaryJa": ""
-    },
-    {
-      "rank": 8,
-      "name": "openai/skills",
-      "url": "https://github.com/openai/skills",
-      "description": "Skills Catalog for Codex",
-      "language": "Python",
-      "stars": 27106,
-      "forks": 1809,
-      "starsThisPeriod": 1622,
-      "summaryJa": ""
+      "stars": 23777,
+      "forks": 1715,
+      "starsThisPeriod": 1242,
+      "summaryJa": "AI コーディング エージェントのコンテキスト ウィンドウの最適化。ツールの出力をサンドボックス化し (98% 削減)、セッション メモリを保持し、MCP + フックを介して 17 のプラットフォーム間でルーティングを強制します。"
     },
     {
       "rank": 9,
-      "name": "heygen-com/hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes",
-      "description": "Write HTML. Render video. Built for agents.",
-      "language": "TypeScript",
-      "stars": 49643,
-      "forks": 4534,
-      "starsThisPeriod": 5146,
-      "summaryJa": ""
+      "name": "max-sixty/worktrunk",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+      "language": "Rust",
+      "stars": 8215,
+      "forks": 284,
+      "starsThisPeriod": 822,
+      "summaryJa": "Worktrunk は Git ワークツリー管理用の CLI であり、並列 AI エージェント ワークフロー向けに設計されています。"
     },
     {
       "rank": 10,
-      "name": "microsoft/markitdown",
-      "url": "https://github.com/microsoft/markitdown",
-      "description": "Python tool for converting files and office documents to Markdown.",
+      "name": "home-assistant/core",
+      "url": "https://github.com/home-assistant/core",
+      "description": "🏡 Open source home automation that puts local control and privacy first.",
       "language": "Python",
-      "stars": 183631,
-      "forks": 13513,
-      "starsThisPeriod": 5191,
-      "summaryJa": ""
+      "stars": 90898,
+      "forks": 38714,
+      "starsThisPeriod": 480,
+      "summaryJa": "🏡 ローカル制御とプライバシーを最優先するオープンソースのホーム オートメーション。"
     }
   ]
 }
