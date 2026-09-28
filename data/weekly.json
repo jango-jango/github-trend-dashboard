@@ -1,49 +1,43 @@
 {
-  "updatedAt": "2026-09-21T02:30:56.637Z",
+  "updatedAt": "2026-09-28T02:44:28.704Z",
   "period": "weekly",
   "sourceUrl": "https://github.com/trending?since=weekly",
   "count": 10,
   "insights": {
-    "headline": "コーディングエージェント／スキルが 7 件（上位の中心）。横断的な偏りとして見る。",
+    "headline": "コーディングエージェント／スキルが 6 件（上位の中心）。横断的な偏りとして見る。",
     "languages": [
       {
-        "name": "JavaScript",
-        "count": 3,
-        "repos": [
-          "affaan-m/ECC",
-          "addyosmani/agent-skills",
-          "bilawalsidhu/gods-eye-view"
-        ]
-      },
-      {
-        "name": "Go",
-        "count": 2,
-        "repos": [
-          "alibaba/open-code-review",
-          "Tencent/WeKnora"
-        ]
-      },
-      {
         "name": "Python",
+        "count": 5,
+        "repos": [
+          "anthropics/financial-services",
+          "vectorize-io/hindsight",
+          "davila7/claude-code-templates",
+          "HKUDS/CLI-Anything",
+          "pytorch/pytorch"
+        ]
+      },
+      {
+        "name": "JavaScript",
         "count": 2,
         "repos": [
-          "anthropics/knowledge-work-plugins",
-          "home-assistant/core"
+          "cloudflare/security-audit-skill",
+          "vercel/next.js"
         ]
       },
       {
         "name": "TypeScript",
         "count": 2,
         "repos": [
-          "anthropics/claude-code",
-          "mksglu/context-mode"
+          "paperclipai/paperclip",
+          "stablyai/orca"
         ]
       },
       {
-        "name": "Rust",
+        "name": "Go",
         "count": 1,
         "repos": [
-          "max-sixty/worktrunk"
+          "Tencent/WeKnora"
         ]
       }
     ],
@@ -51,23 +45,23 @@
       {
         "id": "agent-skills",
         "label": "コーディングエージェント／スキル",
-        "count": 7,
+        "count": 6,
         "repos": [
-          "alibaba/open-code-review",
-          "anthropics/claude-code",
-          "affaan-m/ECC",
+          "vectorize-io/hindsight",
+          "cloudflare/security-audit-skill",
           "Tencent/WeKnora",
-          "addyosmani/agent-skills",
-          "anthropics/knowledge-work-plugins",
-          "max-sixty/worktrunk"
+          "davila7/claude-code-templates",
+          "stablyai/orca",
+          "HKUDS/CLI-Anything"
         ]
       },
       {
         "id": "devtools",
         "label": "エディタ／開発ツール",
-        "count": 1,
+        "count": 2,
         "repos": [
-          "max-sixty/worktrunk"
+          "davila7/claude-code-templates",
+          "HKUDS/CLI-Anything"
         ]
       },
       {
@@ -75,134 +69,126 @@
         "label": "セキュリティ／リバース",
         "count": 1,
         "repos": [
-          "affaan-m/ECC"
-        ]
-      },
-      {
-        "id": "local-ai",
-        "label": "ローカル／自前ホストAI",
-        "count": 1,
-        "repos": [
-          "home-assistant/core"
+          "cloudflare/security-audit-skill"
         ]
       }
     ],
     "momentum": {
-      "max": 15504,
-      "median": 3986
+      "max": 11089,
+      "median": 2705
     }
   },
-  "trendComment": "コーディングエージェント／スキルが 7 件（上位の中心）。横断的な偏りとして見る。\n言語: JavaScript(3)、Go(2)、Python(2)\nテーマ: コーディングエージェント／スキル(7)、エディタ／開発ツール(1)、セキュリティ／リバース(1)\n週間スター増分 最大 +15,504、中央値 +3,986",
+  "trendComment": "コーディングエージェント／スキルが 6 件（上位の中心）。横断的な偏りとして見る。\n言語: Python(5)、JavaScript(2)、TypeScript(2)\nテーマ: コーディングエージェント／スキル(6)、エディタ／開発ツール(2)、セキュリティ／リバース(1)\n週間スター増分 最大 +11,089、中央値 +2,705",
   "repos": [
     {
       "rank": 1,
-      "name": "alibaba/open-code-review",
-      "url": "https://github.com/alibaba/open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "stars": 38470,
-      "forks": 2741,
-      "starsThisPeriod": 15504,
-      "summaryJa": "安全、高速、効率的で、アリババの規模で実証済みです。ハイブリッド アーキテクチャ コード レビュー ツール: 決定論的パイプライン + LLM エージェント、正確な行レベルのコメント、組み込みの多言語ルールセット (NPE、スレッド セー…"
+      "name": "anthropics/financial-services",
+      "url": "https://github.com/anthropics/financial-services",
+      "description": "",
+      "language": "Python",
+      "stars": 37877,
+      "forks": 5464,
+      "starsThisPeriod": 2606,
+      "summaryJa": ""
     },
     {
       "rank": 2,
-      "name": "anthropics/claude-code",
-      "url": "https://github.com/anthropics/claude-code",
-      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "name": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
-      "stars": 147171,
-      "forks": 24072,
-      "starsThisPeriod": 2342,
-      "summaryJa": "Claude Code は、端末内に常駐するエージェント コーディング ツールで、コードベースを理解し、日常的なタスクの実行、複雑なコードの説明、git ワークフローの処理をすべて自然言語コマンドを通じて行うことで、コーディングの高速化を…"
+      "stars": 90163,
+      "forks": 15689,
+      "starsThisPeriod": 7364,
+      "summaryJa": "職場のエージェントを管理するために誰もが使用するオープンソース アプリ"
     },
     {
       "rank": 3,
-      "name": "affaan-m/ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "language": "JavaScript",
-      "stars": 263826,
-      "forks": 39469,
-      "starsThisPeriod": 6453,
-      "summaryJa": "エージェントハーネスパフォーマンス最適化システム。クロード コード、コーデックス、オープンコード、カーソルなどのスキル、本能、記憶力、セキュリティ、研究優先の開発。"
+      "name": "vectorize-io/hindsight",
+      "url": "https://github.com/vectorize-io/hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
+      "language": "Python",
+      "stars": 37576,
+      "forks": 4862,
+      "starsThisPeriod": 11089,
+      "summaryJa": "ヒント: 学習するエージェントの記憶"
     },
     {
       "rank": 4,
+      "name": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 22370,
+      "forks": 1300,
+      "starsThisPeriod": 4805,
+      "summaryJa": "独立して検証され、機械可読な結果を伴う多段階セキュリティ監査のためのコーディング エージェント スキル"
+    },
+    {
+      "rank": 5,
       "name": "Tencent/WeKnora",
       "url": "https://github.com/Tencent/WeKnora",
       "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
       "language": "Go",
-      "stars": 28080,
-      "forks": 3775,
-      "starsThisPeriod": 5242,
+      "stars": 30656,
+      "forks": 4102,
+      "starsThisPeriod": 2705,
       "summaryJa": "オープンソース LLM ナレッジ プラットフォーム: 生のドキュメントをクエリ可能な RAG、自律推論エージェント、自己保守型 Wiki に変換します。"
     },
     {
-      "rank": 5,
-      "name": "addyosmani/agent-skills",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "language": "JavaScript",
-      "stars": 97739,
-      "forks": 10297,
-      "starsThisPeriod": 3986,
-      "summaryJa": "AI コーディング エージェントのためのプロダクション グレードのエンジニアリング スキル。"
-    },
-    {
       "rank": 6,
-      "name": "anthropics/knowledge-work-plugins",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "name": "davila7/claude-code-templates",
+      "url": "https://github.com/davila7/claude-code-templates",
+      "description": "CLI tool for configuring and monitoring Claude Code",
       "language": "Python",
-      "stars": 25289,
-      "forks": 3007,
-      "starsThisPeriod": 1298,
-      "summaryJa": "主に知識労働者が Claude Cowork で使用することを目的としたプラグインのオープンソース リポジトリ"
+      "stars": 31993,
+      "forks": 3644,
+      "starsThisPeriod": 1154,
+      "summaryJa": "Claude Code を設定および監視するための CLI ツール"
     },
     {
       "rank": 7,
-      "name": "bilawalsidhu/gods-eye-view",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view",
-      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
-      "language": "JavaScript",
-      "stars": 39696,
-      "forks": 8033,
-      "starsThisPeriod": 8111,
-      "summaryJa": "ブラウザ上のスパイ衛星シミュレーターですが、データは本物です。フォトリアリスティックな 3D 地球儀上にオープンソースの空間インテリジェンスをライブで表示します。"
+      "name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "language": "TypeScript",
+      "stars": 79731,
+      "forks": 5210,
+      "starsThisPeriod": 6227,
+      "summaryJa": "Orca は、並列エージェントのフリートを操作するための ADE です。 Run any coding agent with your own subscription. Available on desktop, mobile and …"
     },
     {
       "rank": 8,
-      "name": "mksglu/context-mode",
-      "url": "https://github.com/mksglu/context-mode",
-      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
-      "language": "TypeScript",
-      "stars": 23777,
-      "forks": 1715,
-      "starsThisPeriod": 1242,
-      "summaryJa": "AI コーディング エージェントのコンテキスト ウィンドウの最適化。ツールの出力をサンドボックス化し (98% 削減)、セッション メモリを保持し、MCP + フックを介して 17 のプラットフォーム間でルーティングを強制します。"
+      "name": "vercel/next.js",
+      "url": "https://github.com/vercel/next.js",
+      "description": "The React Framework",
+      "language": "JavaScript",
+      "stars": 142807,
+      "forks": 33314,
+      "starsThisPeriod": 496,
+      "summaryJa": "React フレームワーク"
     },
     {
       "rank": 9,
-      "name": "max-sixty/worktrunk",
-      "url": "https://github.com/max-sixty/worktrunk",
-      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
-      "language": "Rust",
-      "stars": 8215,
-      "forks": 284,
-      "starsThisPeriod": 822,
-      "summaryJa": "Worktrunk は Git ワークツリー管理用の CLI であり、並列 AI エージェント ワークフロー向けに設計されています。"
+      "name": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 50766,
+      "forks": 4639,
+      "starsThisPeriod": 1105,
+      "summaryJa": "「CLI-Anything: すべてのソフトウェア エージェントをネイティブにする」 -- CLI-Hub: https://clianything.cc/"
     },
     {
       "rank": 10,
-      "name": "home-assistant/core",
-      "url": "https://github.com/home-assistant/core",
-      "description": "🏡 Open source home automation that puts local control and privacy first.",
+      "name": "pytorch/pytorch",
+      "url": "https://github.com/pytorch/pytorch",
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "language": "Python",
-      "stars": 90898,
-      "forks": 38714,
-      "starsThisPeriod": 480,
-      "summaryJa": "🏡 ローカル制御とプライバシーを最優先するオープンソースのホーム オートメーション。"
+      "stars": 103426,
+      "forks": 30786,
+      "starsThisPeriod": 320,
+      "summaryJa": "強力な GPU アクセラレーションを備えた Python のテンソルとダイナミック ニューラル ネットワーク"
     }
   ]
 }
